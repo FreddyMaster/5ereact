@@ -1,0 +1,1213 @@
+[
+    {
+        "name": "Artificer",
+        "hit_die": 8,
+        "primary_ability": "Intelligence",
+        "saving_throws": [
+            "Constitution",
+            "Intelligence"
+        ],
+        "armor_proficiencies": [
+            "Light armor",
+            "Medium armor",
+            "Shields"
+        ],
+        "weapon_proficiencies": [
+            "Simple weapons",
+            "Hand crossbows",
+            "Longswords",
+            "Rapiers",
+            "Shortswords"
+        ],
+        "tool_proficiencies": [
+            "Thieves' tools",
+            "Tinker's tools"
+        ],
+        "spellcasting_ability": "Intelligence",
+        "subclasses": [
+            {
+                "name": "Alchemist",
+                "subclass_features": [
+                    {
+                        "level": 3,
+                        "name": "Experimental Elixir",
+                        "description": "You can magically create an experimental elixir in your empty hand. After a long rest, you can create one or more experimental elixirs by expending materials and components worth a total of 100 gp per elixir."
+                    },
+                    {
+                        "level": 3,
+                        "name": "Alchemist Spells",
+                        "description": "Starting at 3rd level, you always have certain spells prepared after you reach particular levels in this class, as shown in the Alchemist Spells table. These spells count as artificer spells for you, but they don't count against the number of artificer spells you prepare."
+                    },
+                    {
+                        "level": 5,
+                        "name": "Alchemical Savant",
+                        "description": "At 5th level, you develop masterful command of magical chemicals, enhancing the healing and damage you create through them. Whenever you cast a spell using your alchemist's supplies as the spellcasting focus, you gain a bonus to one roll of the spell. That roll must restore hit points or be a damage roll that deals acid, fire, necrotic, or poison damage, and the bonus equals your Intelligence modifier (minimum of +1)."
+                    },
+                    {
+                        "level": 9,
+                        "name": "Restorative Reagents",
+                        "description": "Starting at 9th level, you can incorporate restorative reagents into some of your works:  Whenever a creature drinks an experimental elixir you created, the creature gains temporary hit points equal to 2d6 + your Intelligence modifier (minimum of 1 temporary hit point).  You can cast lesser restoration without expending a spell slot and without preparing the spell, provided you use alchemist's supplies as the spellcasting focus. You can do so a number of times equal to your Intelligence modifier (minimum of once), and you regain all expended uses when you finish a long rest."
+                    },
+                    {
+                        "level": 15,
+                        "name": "Chemical Mastery",
+                        "description": "By 15th level, you have been exposed to so many chemicals that they pose little risk to you, and you can use them to quickly end certain ailments:  You gain resistance to acid damage and poison damage, and you are immune to the poisoned condition.  You can cast greater restoration and heal without expending a spell slot, without preparing the spell, and without material components, provided you use alchemist's supplies as the spellcasting focus. Once you cast either spell with this feature, you can't cast that spell with it again until you finish a long rest."
+                    }
+                ]
+            },
+            {
+                "name": "Artillerist",
+                "subclass_features": [
+                    {
+                        "level": 3,
+                        "name": "Artillerist Spells",
+                        "description": "Starting at 3rd level, you always have certain spells prepared after you reach particular levels in this class, as shown in the Artillerist Spells table. These spells count as artificer spells for you, but they don't count against the number of artificer spells you prepare."
+                    },
+                    {
+                        "level": 3,
+                        "name": "Eldritch Cannon",
+                        "description": "You learn how to create a magical cannon. Using your action, you can magically create a Small or Tiny eldritch cannon in an unoccupied space on a horizontal surface within 5 feet of you. You can have only one cannon at a time and can't create one while your cannon is present."
+                    },
+                    {
+                        "level": 5,
+                        "name": "Arcane Firearm",
+                        "description": "At 5th level, you know how to turn a wand, staff, or rod into an arcane firearm, a conduit for your destructive spells. When you finish a long rest, you can use woodcarver's tools to carve special sigils into a wand, staff, or rod and thereby turn it into your arcane firearm. The sigils disappear from the object if you later carve them on a different item. The sigils otherwise last indefinitely.  You can use your arcane firearm as a spellcasting focus for your artificer spells. When you cast an artificer spell through the firearm, roll a d8, and you gain a bonus to one of the spell's damage rolls equal to the number rolled."
+                    },
+                    {
+                        "level": 9,
+                        "name": "Explosive Cannon",
+                        "description": "Starting at 9th level, every eldritch cannon you create is more destructive: The cannon's damage rolls all increase by 1d8.  As an action, you can command the cannon to detonate if you are within 60 feet of it. Doing so destroys the cannon and forces each creature within 20 feet of it to make a Dexterity saving throw against your spell save DC, taking 3d8 force damage on a failed save or half as much damage on a successful one."
+                    },
+                    {
+                        "level": 15,
+                        "name": "Fortified Position",
+                        "description": "Starting at 15th level, you're a master at forming well-defended emplacements using Eldritch Cannon:  You and your allies have half cover while within 10 feet of a cannon you create with Eldritch Cannon, as a result of a shimmering field of magical protection that the cannon emits.  You can now have two cannons at the same time. You can create two with the same action (but not the same spell slot), and you can activate both of them with the same bonus action. You determine whether the cannons are identical to each other or different. You can't create a third cannon while you have two."
+                    }
+                ]
+            },
+            {
+                "name": "Battle Smith",
+                "subclass_features": [
+                    {
+                        "level": 3,
+                        "name": "Battle Ready",
+                        "description": "You gain proficiency with martial weapons, and you can use your Intelligence modifier in place of your Strength or Dexterity modifier for the attack and damage rolls of your melee weapon attacks."
+                    },
+                    {
+                        "level": 3,
+                        "name": "Steel Defender",
+                        "description": "You learn to craft a magical companion, a steel defender. It has the statistics of a Medium beast, and it obeys your commands. You can use your action to command it to take the Attack, Dash, Disengage, Help, Hide, or Search action."
+                    },
+                    {
+                        "level": 3,
+                        "name": "Battle Smith Spells",
+                        "description": "Starting at 3rd level, you always have certain spells prepared after you reach particular levels in this class, as shown in the Battle Smith Spells table. These spells count as artificer spells for you, but they don't count against the number of artificer spells you prepare."
+                    },
+                    {
+                        "level": 5,
+                        "name": "Extra Attack",
+                        "description": "Starting at 5th level, you can attack twice, rather than once, whenever you take the Attack action on your turn."
+                    },
+                    {
+                        "level": 9,
+                        "name": "Arcane Jolt",
+                        "description": "At 9th level, you learn new ways to channel arcane energy to harm or heal. When either you hit a target with a magic weapon attack or your steel defender hits a target, you can channel magical energy through the strike to create one of the following effects:  The target takes an extra 2d6 force damage.  Choose one creature or object you can see within 30 feet of the target. Healing energy flows into the chosen recipient, restoring 2d6 hit points to it.  You can use this energy a number of times equal to your Intelligence modifier (minimum of once), but you can do so no more than once on a turn. You regain all expended uses when you finish a long rest."
+                    },
+                    {
+                        "level": 15,
+                        "name":"Improved Defender",
+                        "description": "At 15th level, your Arcane Jolt and steel defender become more powerful:  The extra damage and the healing of your Arcane Jolt both increase to 4d6.Your steel defender gains a +2 bonus to Armor Class.  Whenever your steel defender uses its Deflect Attack, the attacker takes force damage equal to 1d4 + your Intelligence modifier."
+                    }
+                ]
+            },
+            {
+                "name": "Armorer",
+                "subclass_features": [
+                    {
+                        "level": 3,
+                        "name": "Tools of the Trade",
+                        "description": "You gain proficiency with heavy armor. You also gain proficiency with smith's tools. If you already have this tool proficiency, you gain proficiency with one other type of artisan's tools of your choice."
+                    },
+                    {
+                        "level": 3,
+                        "name": "Armorer Spells",
+                        "description": "You always have certain spells prepared after you reach particular levels in this class, as shown in the Armorer Spells table. These spells count as artificer spells for you, but they don't count against the number of artificer spells you prepare."
+                    },
+                    {
+                        "level": 3,
+                        "name": "Arcane Armor",
+                        "description": "Your metallurgical pursuits have led to you making armor a conduit for your magic. As an action, you can turn a suit of armor you are wearing into Arcane Armor, provided you have smith's tools in hand.  You gain the following benefits while wearing this armor:  If the armor normally has a Strength requirement, the arcane armor lacks this requirement for you.  You can use the arcane armor as a spellcasting focus for your artificer spells.  The armor attaches to you and can't be removed against your will. It also expands to cover your entire body, although you can retract or deploy the helmet as a bonus action. The armor replaces any missing limbs, functioning identically to a limb it replaces.  You can doff or don the armor as an action. The armor continues to be Arcane Armor until you don another suit of armor or you die."
+                    },
+                    {
+                        "level": 3,
+                        "name": "Armor Model",
+                        "description": "You can customize your Arcane Armor. When you do so, choose one of the following armor models: Guardian or Infiltrator. The model you choose gives you special benefits while you wear it.  Each model includes a special weapon. When you attack with that weapon, you can add your Intelligence modifier, instead of Strength or Dexterity, to the attack and damage rolls.  You can change the armor's model whenever you finish a short or long rest, provided you have smith's tools in hand.  Guardian.  You design your armor to be in the front line of conflict. It has the following features:  Thunder Gauntlets. Each of the armor's gauntlets counts as a simple melee weapon while you aren't holding anything in it, and it deals 1d8 thunder damage on a hit. A creature hit by the gauntlet has disadvantage on attack rolls against targets other than you until the start of your next turn, as the armor magically emits a distracting pulse when the creature attacks someone else.  Defensive Field. As a bonus action, you can gain temporary hit points equal to your level in this class, replacing any temporary hit points you already have. You lose these temporary hit points if you doff the armor. You can use this bonus action a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.  Infiltrator.  You customize your armor for subtle undertakings. It has the following features:  Lightning Launcher. A gemlike node appears on one of your armored fists or on the chest (your choice). It counts as a simple ranged weapon, with a normal range of 90 feet and a long range of 300 feet, and it deals 1d6 lightning damage on a hit. Once on each of your turns when you hit a creature with it, you can deal an extra 1d6 lightning damage to that target.  Powered Steps. Your walking speed increases by 5 feet.  Dampening Field. You have advantage on Dexterity (Stealth) checks. If the armor normally imposes disadvantage on such checks, the advantage and disadvantage cancel each other, as normal."
+                    },
+                    {
+                        "level": 5,
+                        "name": "Extra Attack",
+                        "description": "You can attack twice, rather than once, whenever you take the Attack action on your turn."
+                    },
+                    {
+                        "level": 9,
+                        "name": "Armor Modifications",
+                        "description": "You learn how to use your artificer infusions to specially modify your Arcane Armor. That armor now counts as separate items for the purposes of your Infuse Items feature: armor (the chest piece), boots, helmet, and the armor's special weapon. Each of those items can bear one of your infusions, and the infusions transfer over if you change your armor's model with the Armor Model feature. In addition, the maximum number of items you can infuse at once increases by 2, but those extra items must be part of your Arcane Armor."
+                    },
+                    {
+                        "level": 15,
+                        "name": "Perfected Armor",
+                        "description": "Your Arcane Armor gains additional benefits based on its model, as shown below.  Guardian. When a Huge or smaller creature you can see ends its turn within 30 feet of you, you can use your reaction to magically force it to make a Strength saving throw against your spell save DC. On a failed save, you pull the creature up to 25 feet directly to an unoccupied space. If you pull the target to a space within 5 feet of you, you can make a melee weapon attack against it as part of this reaction.  You can use this reaction a number of times equal to your proficiency bonus, and you regain all expended uses of it when you finish a long rest.Infiltrator.  Any creature that takes lightning damage from your Lightning Launcher glimmers with magical light until the start of your next turn. The glimmering creature sheds dim light in a 5-foot radius, and it has disadvantage on attack rolls against you, as the light jolts it if it attacks you. In addition, the next attack roll against it has advantage, and if that attack hits, the target takes an extra 1d6 lightning damage."
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Barbarian",
+        "hit_die": 12,
+        "primary_ability": "Strength",
+        "saving_throws": [
+            "Strength",
+            "Constitution"
+        ],
+        "armor_proficiencies": [
+            "Light armor",
+            "Medium armor",
+            "Shields"
+        ],
+        "weapon_proficiencies": [
+            "Simple weapons",
+            "Martial weapons"
+        ],
+        "tool_proficiencies": [],
+        "spellcasting_ability": null,
+        "subclasses": [
+            {
+                "name": "Path of Wild Magic",
+                "subclass_features": [
+                    {
+                        "level": 3,
+                        "name": "Magic Awareness",
+                        "description": "As an action, you can open your awareness to the presence of concentrated magic. Until the end of your next turn, you know the location of any spell or magic item within 60 feet of you that isn't behind total cover. When you sense a spell, you learn which school of magic it belongs to.  You can use this feature a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest."
+                    },
+                    {
+                        "level": 3,
+                        "name": "Wild Surge",
+                        "description": "The magical energy roiling inside you sometimes erupts from you. When you enter your rage, roll on the Wild Magic table to determine the magical effect produced.  If the effect requires a saving throw, the DC equals 8 + your proficiency bonus + your Constitution modifier."
+                    },
+                    {
+                        "level": 6,
+                        "name": "Bolstering Magic",
+                        "description": "You can harness your wild magic to bolster yourself or a companion. As an action, you can touch one creature (which can be yourself) and confer one of the following benefits of your choice to that creature:  For 10 minutes, the creature can roll a d3 whenever making an attack roll or an ability check and add the number rolled to the d20 roll.  Roll a d3. The creature regains one expended spell slot, the level of which equals the number rolled or lower (the creature's choice). Once a creature receives this benefit, that creature can't receive it again until after a long rest.  You can take this action a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest."
+                    },
+                    {
+                        "level": 10,
+                        "name": "Unstable Backlash",
+                        "description": "When you are imperiled during your rage, the magic within you can lash out; immediately after you take damage or fail a saving throw while raging, you can use your reaction to roll on the Wild Magic table and immediately produce the effect rolled. This effect replaces your current Wild Magic effect."
+                    },
+                    {
+                        "level": 14,
+                        "name": "Controlled Surge",
+                        "description": "Whenever you roll on the Wild Magic table, you can roll the die twice and choose which of the two effects to unleash. If you roll the same number on both dice, you can ignore the number and choose any effect on the table."
+                    }
+                ]
+            },
+            {
+                "name": "Path of the Ancestral Guardian",
+                "subclass_features": [
+                    {
+                        "level": 3,
+                        "name": "Ancestral Protectors",
+                        "description": "Starting when you choose this path at 3rd level, spectral warriors appear when you enter your rage. While you're raging, the first creature you hit with an attack on your turn becomes the target of the warriors, which hinder its attacks. Until the start of your next turn, that target has disadvantage on any attack roll that isn't against you, and when the target hits a creature other than you with an attack, that creature has resistance to the damage dealt by the attack. The effect on the target ends early if your rage ends."
+                    },
+                    {
+                        "level": 6,
+                        "name": "Spirit Shield",
+                        "description": "Beginning at 6th level, the guardian spirits that aid you can provide supernatural protection to those you defend. If you are raging and another creature you can see within 30 feet of you takes damage, you can use your reaction to reduce that damage by 2d6.  When you reach certain levels in this class, you can reduce the damage by more: by 3d6 at 10th level and by 4d6 at 14th level."
+                    },
+                    {
+                        "level": 10,
+                        "name": "Consult the Spirits",
+                        "description": "At 10th level, you gain the ability to consult with your ancestral spirits. When you do so, you cast the augury or clairvoyance spell, without using a spell slot or material components. Rather than creating a spherical sensor, this use of clairvoyance invisibly summons one of your ancestral spirits to the chosen location. Wisdom is your spellcasting ability for these spells.  After you cast either spell in this way, you can't use this feature again until you finish a short or long rest."
+                    },
+                    {
+                        "level": 14,
+                        "name": "Vengeful Ancestors",
+                        "description": "At 14th level, your ancestral spirits grow powerful enough to retaliate. When you use your Spirit Shield to reduce the damage of an attack, the attacker takes an amount of force damage equal to the damage that your Spirit Shield prevents."
+                    }
+                ]
+            },
+            {
+                "name": "Path of the Battlerager",
+                "requires": "Dwarf",
+                "subclass_features": [
+                    {
+                        "level": 3,
+                        "name": "Battlerager Armor",
+                        "description": "When you choose this path at 3rd level, you gain the ability to use spiked armor as a weapon.  While you are wearing spiked armor and are raging, you can use a bonus action to make one melee weapon attack with your armor spikes at a target within 5 feet of you. If the attack hits, the spikes deal 1d4 piercing damage. You use your Strength modifier for the attack and damage rolls.  Additionally, when you use the Attack action to grapple a creature, the target takes 3 piercing damage if your grapple check succeeds."
+                    },
+                    {
+                        "level": 6,
+                        "name": "Reckless Abandon",
+                        "description": "Beginning at 6th level, when you use Reckless Attack while raging, you also gain temporary hit points equal to your Constitution modifier (minimum of 1). They vanish if any of them are left when your rage ends."
+                    },
+                    {
+                        "level": 10,
+                        "name": "Battlerager Charge",
+                        "description": "Beginning at 10th level, you can take the Dash action as a bonus action while you are raging."
+                    },
+                    {
+                        "level": 14,
+                        "name": "Spiked Retribution",
+                        "description": "Starting at 14th level, when a creature within 5 feet of you hits you with a melee attack, the attacker takes 3 piercing damage if you are raging, aren't incapacitated, and are wearing spiked armor."
+                    }
+                ]
+            },
+            {
+                "name": "Path of the Beast",
+                "subclass_features": [
+                    {
+                        "level": 3,
+                        "name": "Form of the Beast",
+                        "description": "When you enter your rage, you can transform, revealing the bestial power within you. Until the rage ends, you manifest a natural weapon. It counts as a simple melee weapon for you, and you add your Strength modifier to the attack and damage rolls when you attack with it, as normal.You choose the weapon's form each time you rage:Bite. Your mouth transforms into a bestial muzzle or great mandibles (your choice). It deals 1d8 piercing damage on a hit. Once on each of your turns when you damage a creature with this bite, you regain a number of hit points equal to your proficiency bonus, provided you have less than half your hit points when you hit.Claws. Each of your hands transforms into a claw, which you can use as a weapon if it's empty. It deals 1d6 slashing damage on a hit. Once on each of your turns when you attack with a claw using the Attack action, you can make one additional claw attack as part of the same action.  Tail. You grow a lashing, spiny tail, which deals 1d8 piercing damage on a hit and has the reach property. If a creature you can see within 10 feet of you hits you with an attack roll, you can use your reaction to swipe your tail and roll a d8, applying a bonus to your AC equal to the number rolled, potentially causing the attack to miss you."
+                    },
+                    {
+                        "level": 6,
+                        "name": "Bestial Soul",
+                        "description": "The feral power within you increases, causing the natural weapons of your Form of the Beast to count as magical for the purpose of overcoming resistance and immunity to nonmagical attacks and damage.  You can also alter your form to help you adapt to your surroundings. When you finish a short or long rest, choose one of the following benefits, which lasts until you finish your next short or long rest:  You gain a swimming speed equal to your walking speed, and you can breathe underwater.  You gain a climbing speed equal to your walking speed, and you can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check.  When you jump, you can make a Strength (Athletics) check and extend your jump by a number of feet equal to the check's total. You can make this special check only once per turn."
+                    },
+                    {
+                        "level": 10,
+                        "name": "Infectious Fury",
+                        "description": "When you hit a creature with your natural weapons while you are raging, the beast within you can curse your target with rabid fury. The target must succeed on a Wisdom saving throw (DC equal to 8 + your Constitution modifier + your proficiency bonus) or suffer one of the following effects (your choice):  The target must use its reaction to make a melee attack against another creature of your choice that you can see.  The target takes 2d12 psychic damage.  You can use this feature a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest."
+                    },
+                    {
+                        "level": 14,
+                        "name": "Call the Hunt",
+                        "description": "The beast within you grows so powerful that you can spread its ferocity to others and gain resilience from them joining your hunt. When you enter your rage, you can choose a number of other willing creatures you can see within 30 feet of you equal to your Constitution modifier (minimum of one creature).  You gain 5 temporary hit points for each creature that accepts this feature. Until the rage ends, the chosen creatures can each use the following benefit once on each of their turns: when the creature hits a target with an attack roll and deals damage to it, the creature can roll a d6 and gain a bonus to the damage equal to the number rolled.  You can use this feature a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest."
+                    }
+                ]
+            },
+            {
+                "name": "Path of the Berserker",
+                "subclass_features": [
+                    {
+                        "level": 3,
+                        "name": "Frenzy",
+                        "description": "Starting when you choose this path at 3rd level, you can go into a frenzy when you rage. If you do so, for the duration of your rage you can make a single melee weapon attack as a bonus action on each of your turns after this one. When your rage ends, you suffer one level of exhaustion."
+                    },
+                    {
+                        "level": 6,
+                        "name": "Mindless Rage",
+                        "description": "Beginning at 6th level, you can't be charmed or frightened while raging. If you are charmed or frightened when you enter your rage, the effect is suspended for the duration of the rage."
+                    },
+                    {
+                        "level": 10,
+                        "name": "Intimidating Presence",
+                        "description": "Beginning at 10th level, you can use your action to frighten someone with your menacing presence. When you do so, choose one creature that you can see within 30 feet of you. If the creature can see or hear you, it must succeed on a Wisdom saving throw (DC equal to 8 + your proficiency bonus + your Charisma modifier) or be frightened of you until the end of your next turn. On subsequent turns, you can use your action to extend the duration of this effect on the frightened creature until the end of your next turn. This effect ends if the creature ends its turn out of line of sight or more than 60 feet away from you.  If the creature succeeds on its saving throw, you can't use this feature on that creature again for 24 hours."
+                    },
+                    {
+                        "level": 14,
+                        "name": "Retaliation",
+                        "description": "Starting at 14th level, when you take damage from a creature that is within 5 feet of you, you can use your reaction to make a melee weapon attack against that creature."
+                    }
+                ]
+            },
+            {
+                "name": "Path of the Giant",
+                "subclass_features": [
+                    {
+                        "level": 3,
+                        "name": "Giant Power",
+                        "description": "When you choose this path, you learn to speak, read, and write Giant or one other language of your choice if you already know Giant. Additionally, you learn either the druidcraft or thaumaturgy cantrip (your choice). Wisdom is your spellcasting ability for this spell."
+                    },
+                    {
+                        "level": 3,
+                        "name": "Giant's Havoc",
+                        "description": "Your rages pull strength from the primal might of giants, transforming you into a hulking force of destruction. While raging, you gain the following benefits:  Crushing Hurl. When you make a successful ranged attack with a thrown weapon using Strength, you can add your Rage Damage bonus to the attack's damage roll.  Giant Stature. Your reach increases by 5 feet, and if you are smaller than Large, you become Large, along with anything you are wearing. If there isn't enough room for you to become Large, your size doesn't change."
+                    },
+                    {
+                        "level": 6,
+                        "name": "Elemental Cleaver",
+                        "description": "Your bond with the elemental might of giants and their ilk grows, and you learn to infuse weapons with primordial energy.  When you enter your rage, you can infuse one weapon of your choice that you are holding with one of the following damage types: acid, cold, fire, thunder, or lightning. While you wield the infused weapon during your rage, the weapon's damage type changes to the chosen type, it deals an extra 1d6 damage of the chosen type when it hits, and it gains the thrown property, with a normal range of 20 feet and a long range of 60 feet. If you throw the weapon, it reappears in your hand the instant after it hits or misses a target. The infused weapon's benefits are suppressed while a creature other than you wields it.  While raging and holding the infused weapon, you can use a bonus action to change the infused weapon's current damage type to a different one from the above damage types."
+                    },
+                    {
+                        "level": 10,
+                        "name": "Mighty Impel",
+                        "description": "Your connection to giant strength now allows you to hurl both allies and enemies on the battlefield. As a bonus action while raging, you can choose one Medium or smaller creature within your reach and move it to an unoccupied space you can see within 30 feet of yourself. An unwilling creature must succeed on a Strength saving throw (DC equals 8 + your proficiency bonus + your Strength modifier) to avoid the effect.  If, at the end of this movement, the thrown creature isn't on a surface or liquid that can support it, the creature falls, taking damage as normal and landing prone."
+                    },
+                    {
+                        "level": 14,
+                        "name": "Demiurgic Colossus",
+                        "description": "The primordial power of your rage intensifies. When you rage, your reach now increases by 10 feet, your size can increase to Huge, and you can now use your Mighty Impel to move creatures that are Large or smaller.  In addition, the extra damage dealt by your Elemental Cleaver feature increases to 2d6."
+                    }
+                ]
+            },
+            {
+                "name": "Path of the Storm Herald",
+                "subclass_features": [
+                    {
+                        "level": 3,
+                        "name": "Storm Aura",
+                        "description": "Starting at 3rd level, you emanate a stormy, magical aura while you rage. The aura extends 10 feet from you in every direction, but not through total cover.  Your aura has an effect that activates when you enter your rage, and you can activate the effect again on each of your turns as a bonus action. Choose desert, sea, or tundra. Your aura's effect depends on that chosen environment, as detailed below. You can change your environment choice whenever you gain a level in this class.  If your aura's effects require a saving throw, the DC equals 8 + your proficiency bonus + your Constitution modifier.  Desert.  When this effect is activated, all other creatures in your aura take 2 fire damage each. The damage increases when you reach certain levels in this class, increasing to 3 at 5th level, 4 at 10th level, 5 at 15th level, and 6 at 20th level.  Sea.  When this effect is activated, you can choose one other creature you can see in your aura. The target must make a Dexterity saving throw. The target takes 1d6 lightning damage on a failed save, or half as much damage on a successful one. The damage increases when you reach certain levels in this class, increasing to 2d6 at 10th level, 3d6 at 15th level, and 4d6 at 20th level.=  Tundra.  When this effect is activated, each creature of your choice in your aura gains 2 temporary hit points, as icy spirits inure it to suffering. The temporary hit points increase when you reach certain levels in this class, increasing to 3 at 5th level, 4 at 10th level, 5 at 15th level, and 6 at 20th level."
+                    },
+                    {
+                        "level": 6,
+                        "name": "Storm Soul",
+                        "description": "At 6th level, the storm grants you benefits even when your aura isn't active. The benefits are based on the environment you chose for your Storm Aura.  Desert.  You gain resistance to fire damage, and you don't suffer the effects of extreme heat, as described in the Dungeon Master's Guide. Moreover, as an action, you can touch a flammable object that isn't being worn or carried by anyone else and set it on fire.  Sea.  You gain resistance to lightning damage, and you can breathe underwater. You also gain a swimming speed of 30 feet.  Tundra.  You gain resistance to cold damage, and you don't suffer the effects of extreme cold, as described in the Dungeon Master's Guide. Moreover, as an action, you can touch water and turn a 5-foot cube of it into ice, which melts after 1 minute. This action fails if a creature is in the cube."
+                    },
+                    {
+                        "level": 10,
+                        "name": "Shielding Storm",
+                        "description": "At 10th level, you learn to use your mastery of the storm to protect others. Each creature of your choice has the damage resistance you gained from the Storm Soul feature while the creature is in your Storm Aura."
+                    },
+                    {
+                        "level": 14,
+                        "name": "Raging Storm",
+                        "description": "At 14th level, the power of the storm you channel grows mightier, lashing out at your foes. The effect is based on the environment you chose for your Storm Aura.  Desert.  Immediately after a creature in your aura hits you with an attack, you can use your reaction to force that creature to make a Dexterity saving throw. On a failed save, the creature takes fire damage equal to half your barbarian level.  Sea.  When you hit a creature in your aura with an attack, you can use your reaction to force that creature to make a Strength saving throw. On a failed save, the creature is knocked prone, as if struck by a wave.  Tundra.  Whenever the effect of your Storm Aura is activated, you can choose one creature you can see in the aura. That creature must succeed on a Strength saving throw, or its speed is reduced to 0 until the start of your next turn, as magical frost covers it."
+                    }
+                ]
+            },
+            {
+                "name": "Path of the Totem Warrior",
+                "subclass_features": [
+                    {
+                        "level": 3,
+                        "name": "Spirit Seeker",
+                        "description": "Yours is a path that seeks attunement with the natural world, giving you a kinship with beasts. At 3rd level when you adopt this path, you gain the ability to cast the beast sense and speak with animals spells, but only as rituals, as described in chapter 10."
+                    },
+                    {
+                        "level": 3,
+                        "name": "Totem Spirit",
+                        "description": "At 3rd level, when you adopt this path, you choose a totem spirit and gain its feature. You must make or acquire a physical totem object—an amulet or similar adornment—that incorporates fur or feathers, claws, teeth, or bones of the totem animal. At your option, you also gain minor physical attributes that are reminiscent of your totem spirit. For example, if you have a bear totem spirit, you might be unusually hairy and thick-skinned, or if your totem is the eagle, your eyes turn bright yellow.  Your totem animal might be an animal related to those listed here but more appropriate to your homeland. For example, you could choose a hawk or vulture in place of an eagle.  Bear.  While raging, you have resistance to all damage except psychic damage. The spirit of the bear makes you tough enough to stand up to any punishment.  Eagle.  While you're raging and aren't wearing heavy armor, other creatures have disadvantage on opportunity attack rolls against you, and you can use the Dash action as a bonus action on your turn. The spirit of the eagle makes you into a predator who can weave through the fray with ease.  Elk.  While you're raging and aren't wearing heavy armor, your walking speed increases by 15 feet. The spirit of the elk makes you extraordinarily swift.  Tiger.  While raging, you can add 10 feet to your long jump distance and 3 feet to your high jump distance. The spirit of the tiger empowers your leaps.  Wolf.  While you're raging, your friends have advantage on melee attack rolls against any creature within 5 feet of you that is hostile to you. The spirit of the wolf makes you a leader of hunters."
+                    },
+                    {
+                        "level": 6,
+                        "name": "Aspect of the Beast",
+                        "description": "At 6th level, you gain a magical benefit based on the totem animal of your choice. You can choose the same animal you selected at 3rd level or a different one.  Bear.  You gain the might of a bear. Your carrying capacity (including maximum load and maximum lift) is doubled, and you have advantage on Strength checks made to push, pull, lift, or break objects.  Eagle.  You gain the eyesight of an eagle. You can see up to 1 mile away with no difficulty, able to discern even fine details as though looking at something no more than 100 feet away from you. Additionally, dim light doesn't impose disadvantage on your Wisdom (Perception) checks.  Elk.  Whether mounted or on foot, your travel pace is doubled, as is the travel pace of up to ten companions while they're within 60 feet of you and you're not incapacitated. The elk spirit helps you roam far and fast.  Tiger.  You gain proficiency in two skills from the following list: Athletics, Acrobatics, Stealth, and Survival. The cat spirit hones your survival instincts.  Wolf.  You gain the hunting sensibilities of a wolf. You can track other creatures while traveling at a fast pace, and you can move stealthily while traveling at a normal pace."
+                    },
+                    {
+                        "level": 10,
+                        "name": "Spirit Walker",
+                        "description": "At 10th level, you can cast the commune with nature spell, but only as a ritual. When you do so, a spiritual version of one of the animals you chose for Totem Spirit or Aspect of the Beast appears to you to convey the information you seek."
+                    },
+                    {
+                        "level": 14,
+                        "name": "Totemic Attunement",
+                        "description": "At 14th level, you gain a magical benefit based on a totem animal of your choice. You can choose the same animal you selected previously or a different one.  Bear.  While you're raging, any creature within 5 feet of you that's hostile to you has disadvantage on attack rolls against targets other than you or another character with this feature. An enemy is immune to this effect if it can't see or hear you or if it can't be frightened.  Eagle.  While raging, you have a flying speed equal to your current walking speed. This benefit works only in short bursts; you fall if you end your turn in the air and nothing else is holding you aloft.  Elk.  While raging, you can use a bonus action during your move to pass through the space of a Large or smaller creature. That creature must succeed on a Strength saving throw (DC 8 + your Strength bonus + your proficiency bonus) or be knocked prone and take bludgeoning damage equal to 1d12 + your Strength modifier.  Tiger.  While you're raging, if you move at least 20 feet in a straight line toward a Large or smaller target right before making a melee weapon attack against it, you can use a bonus action to make an additional melee weapon attack against it.  Wolf.  While you're raging, you can use a bonus action on your turn to knock a Large or smaller creature prone when you hit it with melee weapon attack."
+                    }
+                ]
+            },
+            {
+                "name": "Path of the Zealot",
+                "subclass_features": [
+                    {
+                        "level": 3,
+                        "name": "Divine Fury",
+                        "description": "Starting when you choose this path at 3rd level, you can channel divine fury into your weapon strikes. While you're raging, the first creature you hit on each of your turns with a weapon attack takes extra damage equal to 1d6 + half your barbarian level. The extra damage is necrotic or radiant; you choose the type of damage when you gain this feature."
+                    },
+                    {
+                        "level": 3,
+                        "name": "Warrior of the Gods",
+                        "description": "At 3rd level, your soul is marked for endless battle. If a spell, such as raise dead, has the sole effect of restoring you to life (but not undeath), the caster doesn't need material components to cast the spell on you."
+                    },
+                    {
+                        "level": 6,
+                        "name": "Fanatical Focus",
+                        "description": "Starting at 6th level, the divine power that fuels your rage can protect you. If you fail a saving throw while you're raging, you can reroll it, and you must use the new roll. You can use this ability only once per rage."
+                    },
+                    {
+                        "level": 10,
+                        "name": "Zealous Presence",
+                        "description": "At 10th level, you learn to channel divine power to inspire zealotry in others. As a bonus action, you unleash a battle cry infused with divine energy. Up to ten other creatures of your choice within 60 feet of you that can hear you gain advantage on attack rolls and saving throws until the start of your next turn. Once you use this feature, you can't use it again until you finish a long rest."
+                    },
+                    {
+                        "level": 14,
+                        "name": "Rage beyond Death",
+                        "description": "Beginning at 14th level, the divine power that fuels your rage allows you to shrug off fatal blows.  While you're raging, having 0 hit points doesn't knock you unconscious. You still must make death saving throws, and you suffer the normal effects of taking damage while at 0 hit points. However, if you would die due to failing death saving throws, you don't die until your rage ends, and you die then only if you still have 0 hit points."
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Bard",
+        "hit_die": 8,
+        "primary_ability": "Charisma",
+        "saving_throws": [
+            "Dexterity",
+            "Charisma"
+        ],
+        "armor_proficiencies": [
+            "Light armor"
+        ],
+        "weapon_proficiencies": [
+            "Simple weapons",
+            "Hand crossbows",
+            "Longswords",
+            "Rapiers",
+            "Shortswords"
+        ],
+        "tool_proficiencies": [
+            "Three musical instruments of your choice"
+        ],
+        "spellcasting_ability": "Charisma",
+        "subclasses": []
+    },
+    {
+        "name": "Cleric",
+        "hit_die": 8,
+        "primary_ability": "Wisdom",
+        "saving_throws": [
+            "Wisdom",
+            "Charisma"
+        ],
+        "armor_proficiencies": [
+            "Light armor",
+            "Medium armor",
+            "Shields"
+        ],
+        "weapon_proficiencies": [
+            "Simple weapons"
+        ],
+        "tool_proficiencies": [],
+        "spellcasting_ability": "Wisdom",
+        "subclasses": []
+    },
+    {
+        "name": "Druid",
+        "hit_die": 8,
+        "primary_ability": "Wisdom",
+        "saving_throws": [
+            "Intelligence",
+            "Wisdom"
+        ],
+        "armor_proficiencies": [
+            "Light armor",
+            "Medium armor",
+            "Shields (druids will not wear armor or use shields made of metal)"
+        ],
+        "weapon_proficiencies": [
+            "Clubs",
+            "Daggers",
+            "Darts",
+            "Javelins",
+            "Maces",
+            "Quarterstaffs",
+            "Scimitars",
+            "Sickles",
+            "Slings",
+            "Spears"
+        ],
+        "tool_proficiencies": [],
+        "spellcasting_ability": "Wisdom",
+        "subclasses": []
+    },
+    {
+        "name": "Fighter",
+        "hit_die": 10,
+        "primary_ability": "Strength or Dexterity",
+        "saving_throws": [
+            "Strength",
+            "Constitution"
+        ],
+        "armor_proficiencies": [
+            "All armor",
+            "Shields"
+        ],
+        "weapon_proficiencies": [
+            "Simple weapons",
+            "Martial weapons"
+        ],
+        "tool_proficiencies": [],
+        "spellcasting_ability": null,
+        "subclasses": []
+    },
+    {
+        "name": "Monk",
+        "hit_die": 8,
+        "primary_ability": "Dexterity and Wisdom",
+        "saving_throws": [
+            "Strength",
+            "Dexterity"
+        ],
+        "armor_proficiencies": [
+            "None"
+        ],
+        "weapon_proficiencies": [
+            "Simple weapons",
+            "Shortswords"
+        ],
+        "tool_proficiencies": [
+            "Choose one type of artisan's tools or one musical instrument"
+        ],
+        "spellcasting_ability": null,
+        "subclasses": []
+    },
+    {
+        "name": "Mystic",
+        "hit_die": 8,
+        "proficiency_choices": [
+            {
+                "type": "skill",
+                "choose": 2,
+                "from": [
+                    "Acrobatics",
+                    "Athletics",
+                    "Deception",
+                    "Insight",
+                    "Intimidation",
+                    "Investigation",
+                    "Perception",
+                    "Persuasion",
+                    "Stealth",
+                    "Survival"
+                ]
+            }
+        ],
+        "proficiencies": [
+            "Light armor",
+            "Simple weapons",
+            "Crossbows, hand"
+        ],
+        "saving_throws": [
+            "Intelligence",
+            "Wisdom"
+        ],
+        "subclasses": [
+            {
+                "name": "Order of the Awakened",
+                "desc": "Mystics who specialize in using their abilities to gather information and unravel mysteries."
+            },
+            {
+                "name": "Order of the Immortal",
+                "desc": "Mystics who hone their abilities to control their own life force, becoming masters of physical and mental endurance."
+            },
+            {
+                "name": "Order of the Nomad",
+                "desc": "Mystics who master the ability to teleport and phase through objects, becoming capable explorers and scouts."
+            },
+            {
+                "name": "Order of the Soul Knife",
+                "desc": "Mystics who use their powers to manifest psychic blades and other weapons to aid them in combat."
+            }
+        ],
+        "spellcasting": {
+            "cantrips_known": 3,
+            "spell_slots_level_1": 2,
+            "spell_slots_level_2": 3,
+            "spell_slots_level_3": 4,
+            "spell_slots_level_4": 4,
+            "spell_slots_level_5": 4,
+            "spell_slots_level_6": 4,
+            "spell_slots_level_7": 4,
+            "spell_slots_level_8": 3,
+            "spell_slots_level_9": 2,
+            "spellcasting_ability": "Intelligence",
+            "spells_known": 7
+        }
+    },
+    {
+        "name": "Paladin",
+        "hit_die": 10,
+        "primary_ability": "Strength or Charisma",
+        "saving_throws": [
+            "Wisdom",
+            "Charisma"
+        ],
+        "armor_proficiencies": [
+            "Light armor",
+            "Medium armor",
+            "Heavy armor",
+            "Shields"
+        ],
+        "weapon_proficiencies": [
+            "Simple weapons",
+            "Martial weapons"
+        ],
+        "tool_proficiencies": [],
+        "spellcasting_ability": "Charisma",
+        "subclass_options": [
+            {
+                "subclass": "Oath of Devotion",
+                "features": [
+                    "Sacred Weapon",
+                    "Turn the Unholy",
+                    "Aura of Devotion"
+                ]
+            },
+            {
+                "subclass": "Oath of the Ancients",
+                "features": [
+                    "Nature's Wrath",
+                    "Turn the Faithless",
+                    "Aura of Warding"
+                ]
+            },
+            {
+                "subclass": "Oath of Vengeance",
+                "features": [
+                    "Abjure Enemy",
+                    "Vow of Enmity",
+                    "Relentless Avenger"
+                ]
+            }
+        ],
+        "class_features": [
+            {
+                "level": 1,
+                "name": "Divine Sense",
+                "description": "The presence of strong evil registers on your senses like a noxious odor, and powerful good rings like heavenly music in your ears."
+            },
+            {
+                "level": 2,
+                "name": "Fighting Style",
+                "description": "You adopt a particular style of fighting as your specialty."
+            },
+            {
+                "level": 2,
+                "name": "Spellcasting",
+                "description": "You gain the ability to cast spells."
+            },
+            {
+                "level": 3,
+                "name": "Divine Health",
+                "description": "The divine magic flowing through you makes you immune to disease."
+            },
+            {
+                "level": 3,
+                "name": "Sacred Oath",
+                "description": "At 3rd level, you swear to uphold the tenets of your oath, using your divine magic to aid you in your quest."
+            },
+            {
+                "level": 6,
+                "name": "Aura of Protection",
+                "description": "You and friendly creatures within 10 feet of you gain a bonus to saving throws."
+            },
+            {
+                "level": 11,
+                "name": "Improved Divine Smite",
+                "description": "When you hit a creature with a melee weapon attack, you can expend one spell slot to deal radiant damage to the target."
+            },
+            {
+                "level": 20,
+                "name": "Sacred Oath Feature",
+                "description": "You gain a feature associated with your oath."
+            }
+        ]
+    },
+    {
+        "name": "Ranger",
+        "hit_die": 10,
+        "primary_ability": "Dexterity or Wisdom",
+        "saving_throws": [
+            "Strength",
+            "Dexterity"
+        ],
+        "armor_proficiencies": [
+            "Light armor",
+            "Medium armor",
+            "Shields"
+        ],
+        "weapon_proficiencies": [
+            "Simple weapons",
+            "Martial weapons"
+        ],
+        "tool_proficiencies": [],
+        "spellcasting_ability": "Wisdom",
+        "subclass_options": [
+            {
+                "subclass": "Hunter",
+                "features": [
+                    "Hunter's Prey",
+                    "Defensive Tactics",
+                    "Multiattack",
+                    "Superior Hunter's Defense"
+                ]
+            },
+            {
+                "subclass": "Beast Master",
+                "features": [
+                    "Ranger's Companion",
+                    "Exceptional Training",
+                    "Bestial Fury"
+                ]
+            }
+        ],
+        "class_features": [
+            {
+                "level": 1,
+                "name": "Favored Enemy",
+                "description": "Choose a type of creature to be your favored enemy."
+            },
+            {
+                "level": 1,
+                "name": "Natural Explorer",
+                "description": "You are particularly familiar with the terrain around you."
+            },
+            {
+                "level": 2,
+                "name": "Fighting Style",
+                "description": "You adopt a particular style of fighting as your specialty."
+            },
+            {
+                "level": 2,
+                "name": "Spellcasting",
+                "description": "You gain the ability to cast spells."
+            },
+            {
+                "level": 3,
+                "name": "Ranger Archetype",
+                "description": "At 3rd level, you choose an archetype that you strive to emulate."
+            },
+            {
+                "level": 4,
+                "name": "Ability Score Improvement",
+                "description": "You can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1."
+            },
+            {
+                "level": 5,
+                "name": "Extra Attack",
+                "description": "You can attack twice, instead of once, whenever you take the Attack action on your turn."
+            },
+            {
+                "level": 6,
+                "name": "Favored Enemy and Natural Explorer Improvement",
+                "description": "Your bonuses to damage and to rolls made to track your favored enemies, as well as your bonuses to initiative and to certain Intelligence checks while in your favored terrain, increase."
+            },
+            {
+                "level": 8,
+                "name": "Ability Score Improvement",
+                "description": "You can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1."
+            },
+            {
+                "level": 10,
+                "name": "Hide in Plain Sight",
+                "description": "You can use the Hide action as a bonus action, and you can remain hidden even when you make attacks."
+            },
+            {
+                "level": 11,
+                "name": "Relentless",
+                "description": "When you roll initiative and have no uses of your Favored Enemy or Natural Explorer feature remaining, you regain one use of each of those features."
+            },
+            {
+                "level": 12,
+                "name": "Ability Score Improvement",
+                "description": "You can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1."
+            },
+            {
+                "level": 14,
+                "name": "Vanish",
+                "description": "You can use the Hide action as a bonus action, and you can move up to half your speed when doing so."
+            },
+            {
+                "level": 16,
+                "name": "Ability Score Improvement",
+                "description": "You can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1."
+            },
+            {
+                "level": 18,
+                "name": "Feral Senses",
+                "description": "You gain preternatural senses that help you fight creatures you can't see, and you can see through magical darkness."
+            },
+            {
+                "level": 20,
+                "name": "Foe Slayer",
+                "description": "Once on each of your turns, you can add your Wisdom modifier to the attack roll or the damage roll of an attack you make."
+            }
+        ]
+    },
+    {
+        "name": "Rogue",
+        "hit_die": 8,
+        "primary_ability": "Dexterity",
+        "saving_throws": [
+            "Dexterity",
+            "Intelligence"
+        ],
+        "armor_proficiencies": [
+            "Light armor"
+        ],
+        "weapon_proficiencies": [
+            "Simple weapons",
+            "Hand crossbows",
+            "Longswords",
+            "Rapiers",
+            "Shortswords"
+        ],
+        "tool_proficiencies": [
+            "Thieves' tools"
+        ],
+        "spellcasting_ability": "",
+        "subclass_options": [
+            {
+                "subclass": "Thief",
+                "features": [
+                    "Fast Hands",
+                    "Second-Story Work",
+                    "Supreme Sneak"
+                ]
+            },
+            {
+                "subclass": "Assassin",
+                "features": [
+                    "Bonus Proficiencies",
+                    "Assassinate",
+                    "Infiltration Expertise"
+                ]
+            },
+            {
+                "subclass": "Arcane Trickster",
+                "features": [
+                    "Spellcasting",
+                    "Mage Hand Legerdemain",
+                    "Magical Ambush"
+                ]
+            }
+        ],
+        "class_features": [
+            {
+                "level": 1,
+                "name": "Expertise",
+                "description": "Choose two of your skill proficiencies, or one of your skill proficiencies and your proficiency with thieves’ tools. Your proficiency bonus is doubled for any ability check you make that uses either of the chosen proficiencies."
+            },
+            {
+                "level": 1,
+                "name": "Sneak Attack",
+                "description": "Once per turn, you can deal extra damage to one creature you hit with an attack if you have advantage on the attack roll. The attack must use a finesse or ranged weapon."
+            },
+            {
+                "level": 2,
+                "name": "Cunning Action",
+                "description": "Your quick thinking and agility allow you to move and act quickly. You can take a bonus action on each of your turns in combat. This action can be used only to take the Dash, Disengage, or Hide action."
+            },
+            {
+                "level": 5,
+                "name": "Uncanny Dodge",
+                "description": "When an attacker that you can see hits you with an attack, you can use your reaction to halve the attack's damage against you."
+            },
+            {
+                "level": 7,
+                "name": "Evasion",
+                "description": "When you are subjected to an effect that allows you to make a Dexterity saving throw to take only half damage, you instead take no damage if you succeed on the saving throw, and only half damage if you fail."
+            },
+            {
+                "level": 11,
+                "name": "Reliable Talent",
+                "description": "Whenever you make an ability check that lets you add your proficiency bonus, you can treat a d20 roll of 9 or lower as a 10."
+            },
+            {
+                "level": 14,
+                "name": "Blindsense",
+                "description": "If you are able to hear, you are aware of the location of any hidden or invisible creature within 10 feet of you."
+            },
+            {
+                "level": 18,
+                "name": "Elusive",
+                "description": "No attack roll has advantage against you while you aren’t incapacitated."
+            },
+            {
+                "level": 20,
+                "name": "Stroke of Luck",
+                "description": "At 20th level, you have an uncanny knack for succeeding when you need to. If your attack misses a target within range, you can turn the miss into a hit. Alternatively, if you fail an ability check, you can treat the d20 roll as a 20.  Once you use this feature, you can't use it again until you finish a short or long rest."
+            }
+        ]
+    },
+    {
+        "name": "Sorcerer",
+        "hit_die": 6,
+        "primary_ability": "Charisma",
+        "saving_throws": [
+            "Constitution",
+            "Charisma"
+        ],
+        "armor_proficiencies": [],
+        "weapon_proficiencies": [
+            "Daggers",
+            "Darts",
+            "Slings",
+            "Quarterstaffs",
+            "Light crossbows"
+        ],
+        "tool_proficiencies": [],
+        "spellcasting_ability": "Charisma",
+        "subclass_options": [
+            {
+                "subclass": "Draconic Bloodline",
+                "features": [
+                    "Dragon Ancestor",
+                    "Draconic Resilience",
+                    "Elemental Affinity"
+                ]
+            },
+            {
+                "subclass": "Wild Magic",
+                "features": [
+                    "Wild Magic Surge",
+                    "Tides of Chaos",
+                    "Bend Luck"
+                ]
+            },
+            {
+                "subclass": "Divine Soul",
+                "features": [
+                    "Empowered Healing",
+                    "Otherworldly Wings",
+                    "Unearthly Recovery"
+                ]
+            },
+            {
+                "subclass": "Shadow Magic",
+                "features": [
+                    "Eyes of the Dark",
+                    "Strength of the Grave",
+                    "Hound of Ill Omen"
+                ]
+            },
+            {
+                "subclass": "Storm Sorcery",
+                "features": [
+                    "Wind Speaker",
+                    "Tempestuous Magic",
+                    "Heart of the Storm"
+                ]
+            }
+        ],
+        "class_features": [
+            {
+                "level": 1,
+                "name": "Spellcasting",
+                "description": "You can cast spells using the spell slots you gain from the Sorcerer class."
+            },
+            {
+                "level": 1,
+                "name": "Sorcerous Origin",
+                "description": "Choose a Sorcerous Origin, which grants you features at 1st, 6th, 14th, and 18th level."
+            },
+            {
+                "level": 2,
+                "name": "Font of Magic",
+                "description": "You gain additional spell slots and the ability to convert spell slots into Sorcery Points."
+            },
+            {
+                "level": 3,
+                "name": "Metamagic",
+                "description": "You gain the ability to manipulate your spells with Metamagic options."
+            },
+            {
+                "level": 6,
+                "name": "Sorcerous Origin Feature",
+                "description": "You gain a feature associated with your Sorcerous Origin."
+            },
+            {
+                "level": 14,
+                "name": "Sorcerous Origin Feature",
+                "description": "You gain a feature associated with your Sorcerous Origin."
+            },
+            {
+                "level": 18,
+                "name": "Sorcerous Origin Feature",
+                "description": "You gain a feature associated with your Sorcerous Origin."
+            },
+            {
+                "level": 20,
+                "name": "Sorcerous Restoration",
+                "description": "You regain expended Sorcery Points when you finish a short rest."
+            }
+        ]
+    },
+    {
+        "name": "Warlock",
+        "hit_die": 8,
+        "primary_ability": "Charisma",
+        "saving_throws": [
+            "Wisdom",
+            "Charisma"
+        ],
+        "armor_proficiencies": [
+            "Light armor"
+        ],
+        "weapon_proficiencies": [
+            "Simple weapons"
+        ],
+        "tool_proficiencies": [],
+        "spellcasting_ability": "Charisma",
+        "subclass_options": [
+            {
+                "subclass": "The Archfey",
+                "features": [
+                    "Fey Presence",
+                    "Misty Escape",
+                    "Beguiling Defenses"
+                ]
+            },
+            {
+                "subclass": "The Fiend",
+                "features": [
+                    "Dark One's Blessing",
+                    "Dark One's Own Luck",
+                    "Fiendish Resilience"
+                ]
+            },
+            {
+                "subclass": "The Great Old One",
+                "features": [
+                    "Awakened Mind",
+                    "Entropic Ward",
+                    "Thought Shield"
+                ]
+            }
+        ],
+        "class_features": [
+            {
+                "level": 1,
+                "name": "Otherworldly Patron",
+                "description": "At 1st level, you have struck a bargain with an otherworldly being of your choice."
+            },
+            {
+                "level": 1,
+                "name": "Pact Magic",
+                "description": "Your arcane research and the magic bestowed on you by your patron have given you facility with spells."
+            },
+            {
+                "level": 2,
+                "name": "Eldritch Invocations",
+                "description": "In your study of occult lore, you have unearthed eldritch invocations, fragments of forbidden knowledge that imbue you with an abiding magical ability."
+            },
+            {
+                "level": 3,
+                "name": "Pact Boon",
+                "description": "At 3rd level, your otherworldly patron bestows a gift upon you for your loyal service."
+            },
+            {
+                "level": 11,
+                "name": "Mystic Arcanum",
+                "description": "At 11th level, your patron bestows upon you a magical secret called an arcanum."
+            },
+            {
+                "level": 20,
+                "name": "Eldritch Master",
+                "description": "At 20th level, you can draw on your inner reserve of mystical power while entreating your patron to regain expended spell slots."
+            }
+        ]
+    },
+    {
+        "name": "Wizard",
+        "hit_die": 6,
+        "primary_ability": "Intelligence",
+        "saving_throws": [
+            "Intelligence",
+            "Wisdom"
+        ],
+        "armor_proficiencies": [],
+        "weapon_proficiencies": [
+            "Daggers",
+            "Darts",
+            "Slings",
+            "Quarterstaffs",
+            "Light crossbows"
+        ],
+        "tool_proficiencies": [],
+        "spellcasting_ability": "Intelligence",
+        "subclass_options": [
+            {
+                "subclass": "School of Abjuration",
+                "features": [
+                    "Arcane Ward",
+                    "Projected Ward"
+                ]
+            },
+            {
+                "subclass": "School of Conjuration",
+                "features": [
+                    "Minor Conjuration",
+                    "Benign Transposition"
+                ]
+            },
+            {
+                "subclass": "School of Divination",
+                "features": [
+                    "Portent",
+                    "Expert Divination"
+                ]
+            },
+            {
+                "subclass": "School of Enchantment",
+                "features": [
+                    "Hypnotic Gaze",
+                    "Instinctive Charm"
+                ]
+            },
+            {
+                "subclass": "School of Evocation",
+                "features": [
+                    "Sculpt Spells",
+                    "Empowered Evocation"
+                ]
+            },
+            {
+                "subclass": "School of Illusion",
+                "features": [
+                    "Illusory Self",
+                    "Improved Minor Illusion"
+                ]
+            },
+            {
+                "subclass": "School of Necromancy",
+                "features": [
+                    "Grim Harvest",
+                    "Undead Thralls"
+                ]
+            },
+            {
+                "subclass": "School of Transmutation",
+                "features": [
+                    "Minor Alchemy",
+                    "Transmuter's Stone"
+                ]
+            }
+        ],
+        "class_features": [
+            {
+                "level": 1,
+                "name": "Spellcasting",
+                "description": "You have learned to cast spells as a wizard, using your Intelligence as your spellcasting ability."
+            },
+            {
+                "level": 1,
+                "name": "Arcane Recovery",
+                "description": "You have learned to regain some of your magical energy by studying your spellbook."
+            },
+            {
+                "level": 2,
+                "name": "Arcane Tradition",
+                "description": "You have chosen a school of magic to specialize in, which grants you additional features and spells."
+            },
+            {
+                "level": 6,
+                "name": "Power Surge",
+                "description": "You have learned to channel your magical energy to maximize the damage of your spells."
+            },
+            {
+                "level": 10,
+                "name": "Arcane Mastery",
+                "description": "You have gained a deeper understanding of magic, allowing you to cast some spells without expending a spell slot."
+            },
+            {
+                "level": 14,
+                "name": "Spell Resistance",
+                "description": "Your study of magic has granted you resistance to spells."
+            },
+            {
+                "level": 18,
+                "name": "Spell Mastery",
+                "description": "You have mastered a number of spells, allowing you to cast them at will without expending a spell slot."
+            },
+            {
+                "level": 20,
+                "name": "Signature Spell",
+                "description": "You have learned to cast one spell at its highest level without expending a spell slot."
+            }
+        ]
+    }
+]

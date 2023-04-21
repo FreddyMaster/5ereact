@@ -1,0 +1,309 @@
+[
+	{
+		"name": "Dragonborn",
+		"size": "Medium",
+		"speed": 30,
+		"languages": [
+			"Common",
+			"Draconic"
+		],
+		"abilityBonuses": {
+			"STR": 2,
+			"CHA": 1
+		},
+		"traits": [
+			{
+				"name": "Draconic Ancestry",
+				"description": "You have draconic ancestry. Choose one type of dragon from the Draconic Ancestry table. Your breath weapon and damage resistance are determined by the dragon type chosen."
+			},
+			{
+				"name": "Breath Weapon",
+				"description": "You can use your action to exhale destructive energy. Your draconic ancestry determines the size, shape, and damage type of the exhalation."
+			},
+			{
+				"name": "Damage Resistance",
+				"description": "You have resistance to the damage type associated with your draconic ancestry."
+			}
+		],
+		"subraces": [
+			{
+				"name": "Black Dragonborn",
+				"traits": [
+					{
+						"name": "Acid Resistance",
+						"description": "You have resistance to acid damage."
+					},
+					{
+						"name": "Breath Weapon (Acid)",
+						"description": "Your breath weapon deals acid damage in a 5 by 30 ft. line."
+					}
+				]
+			},
+			{
+				"name": "Blue Dragonborn",
+				"traits": [
+					{
+						"name": "Lightning Resistance",
+						"description": "You have resistance to lightning damage."
+					},
+					{
+						"name": "Breath Weapon (Lightning)",
+						"description": "Your breath weapon deals lightning damage in a 5 by 30 ft. line."
+					}
+				]
+			},
+			{
+				"name": "Brass Dragonborn",
+				"traits": [
+					{
+						"name": "Fire Resistance",
+						"description": "You have resistance to fire damage."
+					},
+					{
+						"name": "Breath Weapon (Fire)",
+						"description": "Your breath weapon deals fire damage in a 5 by 30 ft. line."
+					}
+				]
+			},
+			{
+				"name": "Bronze Dragonborn",
+				"traits": [
+					{
+						"name": "Lightning Resistance",
+						"description": "You have resistance to lightning damage."
+					},
+					{
+						"name": "Breath Weapon (Lightning)",
+						"description": "Your breath weapon deals lightning damage in a 5 by 30 ft. line."
+					}
+				]
+			},
+			{
+				"name": "Copper Dragonborn",
+				"traits": [
+					{
+						"name": "Acid Resistance",
+						"description": "You have resistance to acid damage."
+					},
+					{
+						"name": "Breath Weapon (Acid)",
+						"description": "Your breath weapon deals acid damage in a 5 by 30 ft. line."
+					}
+				]
+			},
+			{
+				"name": "Gold Dragonborn",
+				"traits": [
+					{
+						"name": "Fire Resistance",
+						"description": "You have resistance to fire damage."
+					},
+					{
+						"name": "Breath Weapon (Fire)",
+						"description": "Your breath weapon deals fire damage in a 15 ft. cone."
+					}
+				]
+			},
+			{
+				"name": "Green Dragonborn",
+				"traits": [
+					{
+						"name": "Poison Resistance",
+						"description": "You have resistance to poison damage."
+					},
+					{
+						"name": "Breath Weapon (Poison)",
+						"description": "Your breath weapon deals fire damage in a 15 ft. cone."
+					}
+				]
+			},
+			{
+				"name": "Red Dragonborn",
+				"traits": [
+					{
+						"name": "Fire Resistance",
+						"description": "You have resistance to fire damage."
+					},
+					{
+						"name": "Breath Weapon (Fire)",
+						"description": "Your breath weapon deals fire damage in a 15 ft. cone."
+					}
+				]
+			},
+			{
+				"name": "Silver Dragonborn",
+				"traits": [
+					{
+						"name": "Cold Resistance",
+						"description": "You have resistance to cold damage."
+					},
+					{
+						"name": "Breath Weapon (Cold)",
+						"description": "Your breath weapon deals cold damage in a 15 ft. cone."
+					}
+				]
+			},
+			{
+				"name": "White Dragonborn",
+				"traits": [
+					{
+						"name": "Cold Resistance",
+						"description": "You have resistance to cold damage."
+					},
+					{
+						"name": "Breath Weapon (Cold)",
+						"description": "Your breath weapon deals cold damage in a 15 ft. cone."
+					}
+				]
+			}
+		]
+	},
+	{
+		"name": "Human",
+		"size": "Medium",
+		"speed": 30,
+		"languages": [
+			"Common",
+			"One extra language of your choice"
+		],
+		"abilityBonuses": {
+			"Any": 1
+		},
+		"traits": [
+			{
+				"name": "Versatile",
+				"description": "You gain proficiency in one skill of your choice."
+			},
+			{
+				"name": "Extra Feat",
+				"description": "You gain one extra feat of your choice at 1st level."
+			}
+		],
+		"subraces": [
+			{
+				"name": "Variant Human",
+				"abilityBonuses": {
+					"Any": 1,
+					"Any other": 1
+				},
+				"traits": [
+					{
+						"name": "Bonus Feat",
+						"description": "You gain one extra feat of your choice at 1st level."
+					}
+				]
+			},
+			{
+				"name": "Human Determination",
+				"abilityBonuses": {
+					"Any": 1
+				},
+				"traits": [
+					{
+						"name": "Determination",
+						"description": "Once per short rest, you can reroll an ability check, attack roll, or saving throw."
+					}
+				]
+			}
+		]
+	},
+	{
+		"name": "Dwarf",
+		"size": "Medium",
+		"speed": 25,
+		"languages": [
+			"Common",
+			"Dwarvish"
+		],
+		"abilityBonuses": {
+			"Constitution": 2,
+			"Any": 2
+		},
+		"traits": [
+			{
+				"name": "Darkvision",
+				"description": "60ft darkvision"
+			},
+			{
+				"name": "Dwarven Resilience",
+				"description": "Advantage on saving throws against poison, and resistance against poison damage"
+			},
+			{
+				"name": "Stonecunning",
+				"description": "You have advantage on Intelligence (History) checks related to the origin of stonework."
+			}
+		],
+		"subraces": [
+			{
+				"name": "Hill Dwarf",
+				"abilityBonuses": {
+					"Wisdom": 1
+				},
+				"traits": [
+					{
+						"name": "Dwarven Toughness",
+						"description": "Your hit point maximum increases by 1, and it increases by 1 every time you gain a level."
+					}
+				]
+			},
+			{
+				"name": "Mountain Dwarf",
+				"abilityBonuses": {
+					"Strength": 2
+				},
+				"traits": [
+					{
+						"name": "Dwarven Armor Training",
+						"description": "You have proficiency with light and medium armor."
+					}
+				]
+			},
+			{
+				"name": "Duergar",
+				"abilityBonuses": {
+				"Constitution": 2,
+				  "Strength": 1
+				},
+				"traits": [
+				  {
+					"name": "Superior Darkvision",
+					"description": "120ft darkvision"
+				  },
+				  {
+					"name": "Sunlight Sensitivity",
+					"description": "Disadvantage on attack rolls and Perception checks in sunlight"
+				  },
+				  {
+					"name": "Duergar Resilience",
+					"description": "Advantage on saving throws against illusions, paralysis, and poison, and resistance against poison damage"
+				  },
+				  {
+					"name": "Duergar Magic",
+					"description": "At 3rd level, you can cast the Enlarge/Reduce spell on yourself once per long rest. At 5th level, you can cast the Invisibility spell on yourself once per long rest."
+				  }
+				]
+			  },
+			  {
+				"name": "Mark of Warding Dwarf",
+				"abilityBonuses": {
+				  "Constitution": 2,
+				  "Intelligence": 1
+				},
+				"traits": [
+				  {
+					"name": "Dwarven Armor Training",
+					"description": "You have proficiency with light and medium armor."
+				  },
+				  {
+					"name": "Mark of Warding Spells",
+					"description": "You know the Alarm and Mage Armor spells, and can cast them using spell slots once per long rest each."
+				  },
+				  {
+					"name": "Warder's Intuition",
+					"description": "When you make an Intelligence (Investigation) check or an ability check using thieves' tools, you can roll a d4 and add the number rolled to the ability check."
+				  }
+				]
+			}
+		]
+	}
+]

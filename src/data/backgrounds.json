@@ -1,0 +1,1715 @@
+[
+    {
+        "name": "Acolyte",
+        "description": "",
+        "skill_proficiencies": [
+            "Insight",
+            "Religion"
+        ],
+        "languages": [
+            "Two of your choice"
+        ],
+        "starting_items": [
+            "A holy symbol (a gift to you when you entered the priesthood)",
+            "A prayer book or prayer wheel",
+            "5 sticks of incense",
+            "Vestments",
+            "A set of common clothes",
+            "A pouch containing 15 gp"
+        ]
+    },
+    {
+        "name": "Anthropologist",
+        "description": "",
+        "skill_proficiencies": [
+            "History",
+            "Insight"
+        ],
+        "languages": [
+            "Two of your choice"
+        ],
+        "tool_proficiencies": [
+            "One type of artisan's tools or one musical instrument"
+        ],
+        "starting_items": [
+            "A leather-bound diary",
+            "A bottle of ink",
+            "An ink pen",
+            "A set of traveler's clothes",
+            "A trinket or charm recovered from a distant land",
+            "A pouch containing 10 gp"
+        ],
+        "features": [
+            "Observant Eye: You have a knack for picking out details and patterns others might miss. When you make an Intelligence (Investigation) or a Wisdom (Insight) check related to the origin of any object, creature, or disease, you are considered proficient in the History skill and add double your proficiency bonus to the check, instead of your normal proficiency bonus."
+        ]
+    },
+    {
+        "name": "Archaeologist",
+        "description": "",
+        "skill_proficiencies": [
+            "History",
+            "Insight"
+        ],
+        "tool_proficiencies": [
+            "Cartographer's tools",
+            "Navigator's tools"
+        ],
+        "languages": [
+            "One of your choice"
+        ],
+        "starting_items": [
+            "A wooden case containing a map to a ruin or dungeon",
+            "A bullseye lantern",
+            "A miner's pick",
+            "A set of traveler's clothes",
+            "A shovel",
+            "A two-person tent",
+            "A trinket recovered from a dig site",
+            "A pouch containing 25 gp"
+        ],
+        "features": [
+            "Expertise: When you attempt to learn or recall a piece of lore, if you do not know that information, you often know where and from whom you can obtain it. Usually, this information comes from a library, scriptorium, university, or a sage or other learned person or creature. Your DM might rule that the knowledge you seek is secreted away in an almost inaccessible place, or that it simply cannot be found. Unearthing the Depths. You have experience in not only studying ruins, but actually exploring them. You are used to crawling through ancient catacombs, dusty pyramids, and mossy dungeons. You have a knack for finding hidden things such as traps and secret doors."
+        ]
+    },
+    {
+        "name": "Astral Drifter",
+        "description": "",
+        "skill_proficiencies": [
+            "Insight",
+            "Religion"
+        ],
+        "languages": [
+            "Two of your choice ( Celestial or Gith recommended"
+        ],
+        "starting_items": [
+            "A set of traveler's clothes",
+            "A diary",
+            "An ink pen",
+            "A bottle of ink",
+            "A pouch containing 10 gp"
+        ],
+        "features": [
+            "Divine Contact: You gain the Magic Initiate feat from the Player's Handbook and must choose cleric for the feat."
+        ]
+    },
+    {
+        "name": "Athlete",
+        "description": "",
+        "skill_proficiencies": [
+            "Acrobatics",
+            "Athletics"
+        ],
+        "tool_proficiencies": [
+            "Vehicles (land)"
+        ],
+        "languages": [
+            "One of your choice"
+        ],
+        "starting_items": [
+            "A bronze discus or leather ball",
+            "A beast-hide cloak",
+            "A set of traveler's clothes",
+            "A pouch containing 10 gp"
+        ],
+        "features": [
+            "Echoes of Victory: You have attracted admiration among spectators, fellow athletes, and trainers in the region that hosted your past athletic victories. When visiting any settlement within 100 miles of where you grew up, there is a 50 percent chance you can find someone there who admires you and is willing to provide information or temporary shelter.  Between adventures, you might compete in athletic events sufficient enough to maintain a comfortable lifestyle, as per the 'Practicing a Profession' downtime activity in chapter 8 of the Player's Handbook."
+        ]
+    },
+    {
+        "name": "Azorius Functionary",
+        "description": "",
+        "skill_proficiencies": [
+            "Insight",
+            "Intimidation"
+        ],
+        "languages": [
+            "Two of your choice"
+        ],
+        "starting_items": [
+            "An Azorius insignia",
+            "A scroll containing the text of a law important to you",
+            "A bottle of blue ink",
+            "A pen",
+            "A set of fine clothes",
+            "A belt pouch containing 10 gp (Azorius-minted 1-zino coins)"
+        ],
+        "features": [
+            "Legal Authority: You have the authority to enforce the laws of Ravnica, and that status inspires a certain amount of respect and even fear in the populace. People mind their manners in your presence and avoid drawing your attention; they assume you have the right to be wherever you are. Showing your Azorius insignia gets you an audience with anyone you want to talk to (though it might cause more problems than it solves when you're dealing with incorrigible lawbreakers). If you abuse this privilege, though, you can get in serious trouble with your superiors and even be stripped of your position.",
+            "Azorius Guild Spells: For you, the spells on the Azorius Guild Spells table are added to the spell list of your spellcasting class. (If you are a multiclass character with multiple spell lists, these spells are added to all of them.)",
+            {
+                "Cantrip": [
+                    "friends",
+                    "message"
+                ],
+                "1st": [
+                    "command",
+                    "ensnaring strike"
+                ],
+                "2nd": [
+                    "arcane lock",
+                    "calm emotions",
+                    "hold person"
+                ],
+                "3rd": [
+                    "clairvoyance",
+                    "counterspell"
+                ],
+                "4th": [
+                    "compulsion",
+                    "divination"
+                ],
+                "5th": [
+                    "dominate person"
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Caravan Specialist",
+        "description": "",
+        "skill_proficiencies": [
+            "Animal Handling",
+            "Survival"
+        ],
+        "tool_proficiencies": [
+            "Vehicles (land)"
+        ],
+        "languages": [
+            "One of your choice"
+        ],
+        "starting_items": [
+            "A whip",
+            "A two-person tent",
+            "A regional map",
+            "A set of traveler's clothes",
+            "A belt pouch containing 10 gp"
+        ],
+        "features": [
+            "Wagonmaster: You are used to being in charge of the operation and your reputation for reliability has you on a short list when the job is critical. Experience has taught you to rely on your gut. Others recognize this and look to you for direction when a situation gets serious. You are able to identify the most defensible locations for camping. If you are part of a caravan outfit, you are able to attract two additional workers that are loyal to you based on your reputation. You have an excellent memory for maps and geography and can always determine your cardinal directions while traveling. Note: This feature is a variant of the Outlander feature."
+        ]
+    },
+    {
+        "name": "Celebrity Adventurer's Scion",
+        "description": "",
+        "skill_proficiencies": [
+            "Perception",
+            "Performance"
+        ],
+        "tool_proficiencies": [
+            "Disguise kit"
+        ],
+        "languages": [
+            "Two of your choice"
+        ],
+        "starting_items": [
+            "Disguise kit",
+            "A set of fine clothes",
+            "A belt pouch containing 30 gp"
+        ],
+        "features": [
+            "Name Dropping: You know and have met any number of powerful people across the land—and some of them might even remember you. You might be able to wrangle minor assistance from a major figure in the campaign, at the DM's discretion. Additionally, the common folk treat you with deference, and your heritage and the stories you tell might be good for a free meal or a place to sleep."
+        ]
+    },
+    {
+        "name": "Charlatan",
+        "description": "",
+        "skill_proficiencies": [
+            "Deception",
+            "Sleight of Hand"
+        ],
+        "tool_proficiencies": [
+            "Disguise kit",
+            "Forgery kit"
+        ],
+        "starting_items": [
+            "A set of fine clothes",
+            "A disguise kit",
+            "Tools of the con of your choice (ten stoppered bottles filled with colored liquid",
+            "A set of weighted dice",
+            "A deck of marked cards, or a signet ring of an imaginary duke)",
+            "A belt pouch containing 15 gp"
+        ],
+        "features": [
+            "False Identity: You have created a second identity that includes documentation, established acquaintances, and disguises that allow you to assume that persona. Additionally, you can forge documents including official papers and personal letters, as long as you have seen an example of the kind of document or the handwriting you are trying to copy."
+        ]
+    },
+    {
+        "name": "City Watch",
+        "description": "",
+        "skill_proficiencies": [
+            "Athletics",
+            "Insight"
+        ],
+        "languages": [
+            "Any two of your choice"
+        ],
+        "starting_items": [
+            "A uniform in the style of your unit and indicative of your rank",
+            "A horn with which to summon help",
+            "A set of manacles",
+            "A pouch containing 10 gp"
+        ],
+        "features": [
+            "Watcher's Eye: Your experience in enforcing the law, and dealing with lawbreakers, gives you a feel for local laws and criminals. You can easily find the local outpost of the watch or a similar organization, and just as easily pick out the dens of criminal activity in a community, although you're more likely to be welcome in the former locations rather than the latter."
+        ]
+    },
+    {
+        "name": "Clan Crafter",
+        "description": "",
+        "skill_proficiencies": [
+            "History",
+            "Insight"
+        ],
+        "tool_proficiencies": [
+            "One type of artisan's tools"
+        ],
+        "languages": [
+            "Dwarvish or one of your choice if you already speak Dwarvish"
+        ],
+        "starting_items": [
+            "A set of artisan's tools with which you are proficient",
+            "A maker's mark chisel used to mark your handiwork with the symbol of the clan of crafters you learned your skill from",
+            "A set of traveler's clothes",
+            "A pouch containing 5 gp and a gem worth 10 gp"
+        ],
+        "features": [
+            "Respect of the Stout Folk: As well respected as clan crafters are among outsiders, no one esteems them quite so highly as dwarves do. You always have free room and board in any place where shield dwarves or gold dwarves dwell, and the individuals in such a settlement might vie among themselves to determine who can offer you (and possibly your companions) the finest accommodations and assistance."
+        ]
+    },
+    {
+        "name": "Cloistered Scholar",
+        "description": "",
+        "skill_proficiencies": [
+            "History",
+            "your choice of one from among Arcana, Nature, and Religion"
+        ],
+        "languages": [
+            "Any two of your choice"
+        ],
+        "starting_items": [
+            "The scholar's robes of your cloister",
+            "A writing kit (small pouch with a quill, ink, folded parchment, and a small penknife)",
+            "A borrowed book on the subject of your current study",
+            "A pouch containing 10 gp"
+        ],
+        "features": [
+            "Library Access: Though others must often endure extensive interviews and significant fees to gain access to even the most common archives in your library, you have free and easy access to the majority of the library, though it might also have repositories of lore that are too valuable, magical, or secret to permit anyone immediate access.  You have a working knowledge of your cloister's personnel and bureaucracy, and you know how to navigate those connections with some ease.  Additionally, you are likely to gain preferential treatment at other libraries across the Realms, as professional courtesy to a fellow scholar."
+        ]
+    },
+    {
+        "name": "Cormanthor Refugee",
+        "description": "",
+        "skill_proficiencies": [
+            "Nature",
+            "Survival"
+        ],
+        "tool_proficiencies": [
+            "One type of artisan's tools"
+        ],
+        "languages": [
+            "Elven"
+        ],
+        "starting_items": [
+            "A two-person tent",
+            "Artisan's tools",
+            "A holy symbol",
+            "A set of traveler's clothes",
+            "A belt pouch containing 5 gp"
+        ],
+        "features": [
+            "Shelter of the Elven Clergy: The clerics of Elventree have vowed to care for the Cormanthor refugees. They will help you when they can, including providing you and your companions with free healing and care at temples, shrines, and other established presences in Elventree. They will also provide you (but only you) with a poor lifestyle. Note: This feature is a variant of the Acolyte feature."
+        ]
+    },
+    {
+        "name": "Courtier",
+        "description": "",
+        "skill_proficiencies": [
+            "Insight",
+            "Persuasion"
+        ],
+        "languages": [
+            "Any two of your choice"
+        ],
+        "starting_items": [
+            "A set of fine clothes",
+            "A pouch containing 5 gp"
+        ]
+    },
+    {
+        "name": "Criminal",
+        "description": "",
+        "skill_proficiencies": [
+            "Deception",
+            "Stealth"
+        ],
+        "tool_proficiencies": [
+            "One type of gaming set, thieves' tools"
+        ],
+        "starting_items": [
+            "A crowbar",
+            "A set of dark common clothes including a hood",
+            "A belt pouch containing 15 gp"
+        ],
+        "features": [
+            "Criminal Contact: You have a reliable and trustworthy contact who acts as your liaison to a network of other criminals. You know how to get messages to and from your contact, even over great distances; specifically, you know the local messengers, corrupt caravan masters, and seedy sailors who can deliver messages for you."
+        ]
+    },
+    {
+        "name": "Dimir Operative",
+        "description": "",
+        "skill_proficiencies": [
+            "Deception",
+            "Stealth"
+        ],
+        "tool_proficiencies": [
+            "Disguise kit"
+        ],
+        "languages": [
+            "One of your choice"
+        ],
+        "starting_items": [
+            "A Dimir insignia",
+            "Three small knives",
+            "A set of dark-colored common clothes",
+            "The starting equipment of the background described in this chapter for your secondary guild"
+        ],
+        "features": [
+            "False Identity: You have more than one identity. The one you wear most of the time makes you appear to be a member of a guild other than House Dimir. You have documentation, established acquaintances, and disguises that allow you to assume that persona and fit into the secondary guild. Whenever you choose, you can drop this identity and blend into the guildless masses of the city."
+        ]
+    },
+    {
+        "name": "Earthspur Miner",
+        "description": "",
+        "skill_proficiencies": [
+            "Athletics",
+            "Survival"
+        ],
+        "languages": [
+            "Dwarvish",
+            "Undercommon"
+        ],
+        "starting_items": [
+            "A shovel or a miner's pick",
+            "A block and tackle",
+            "A climber's kit",
+            "A set of common clothes",
+            "A belt pouch containing 5 gp"
+        ],
+        "features": [
+            "Deep Miner: You are used to navigating the deep places of the earth. You never get lost in caves or mines if you have either seen an accurate map of them or have been through them before. Furthermore, you are able to scrounge fresh water and food for yourself and as many as five other people each day if you are in a mine or natural caves. Note: This feature is a variant of the Outlander feature."
+        ]
+    },
+    {
+        "name": "Entertainer",
+        "description": "",
+        "skill_proficiencies": [
+            "Acrobatics",
+            "Performance"
+        ],
+        "tool_proficiencies": [
+            "Disguise kit",
+            "One type of musical instrument"
+        ],
+        "starting_items": [
+            "A musical instrument (one of your choice)",
+            "The favor of an admirer (love letter, lock of hair or trinket)",
+            "Costume clothes",
+            "A belt pouch containing 15 gp"
+        ],
+        "features": [
+            "By Popular Demand: You can always find a place to perform, usually in an inn or tavern but possibly with a circus, at a theater, or even in a noble's court. At such a place, you receive free lodging and food of a modest or comfortable standard (depending on the quality of the establishment), as long as you perform each night. In addition, your performance makes you something of a local figure. When strangers recognize you in a town where you have performed, they typically take a liking to you."
+        ]
+    },
+    {
+        "name": "Faceless",
+        "description": "",
+        "skill_proficiencies": [
+            "Deception",
+            "Intimidation"
+        ],
+        "tool_proficiencies": [
+            "Disguise kit"
+        ],
+        "languages": [
+            "One of your choice"
+        ],
+        "starting_items": [
+            "Disguise kit",
+            "A costume",
+            "A pouch containing 10 gp"
+        ],
+        "features": [
+            "Dual Personalities: Most of your fellow adventurers and the world know you as your persona. Those who seek to learn more about you—your weaknesses, your origins, your purpose—find themselves stymied by your disguise. Upon donning a disguise and behaving as your persona, you are unidentifiable as your true self. By removing your disguise and revealing your true face, you are no longer identifiable as your persona. This allows you to change appearances between your two personalities as often as you wish, using one to hide the other or serve as convenient camouflage. However, should someone realize the connection between your persona and your true self, your deception might lose its effectiveness."
+        ]
+    },
+    {
+        "name": "Faction Agent",
+        "description": "",
+        "skill_proficiencies": [
+            "Insight",
+            "one Intelligence, Wisdom, or Charisma skill of your choice, as appropriate to your faction"
+        ],
+        "languages": [
+            "Any two of your choice"
+        ],
+        "starting_items": [
+            "Badge or emblem of your faction",
+            "A copy of a seminal faction text (or code-book for a covert faction)",
+            "A set of common clothes",
+            "A pouch containing 15 gp"
+        ],
+        "features": [
+            "Safe Haven: As a faction agent, you have access to a secret network of supporters and operatives who can provide assistance on your adventures. You know a set of secret signs and passwords you can use to identify such operatives, who can provide you with access to a hidden safe house, free room and board, or assistance in finding information. These agents never risk their lives for you or risk revealing their true identities."
+        ]
+    },
+    {
+        "name": "Failed Merchant",
+        "description": "",
+        "skill_proficiencies": [
+            "Investigation",
+            "Persuasion"
+        ],
+        "languages": [
+            "Any one of your choice"
+        ],
+        "starting_items": [
+            "One set of artisan's tools",
+            "Merchant's scale",
+            "A set of fine clothes",
+            "A belt pouch containing 10 gp"
+        ],
+        "features": [
+            "Supply Chain: From your time as a merchant, you retain connections with wholesalers, suppliers, and other merchants and entrepreneurs. You can call upon these connections when looking for items or information."
+        ]
+    },
+    {
+        "name": "Fisher",
+        "description": "",
+        "skill_proficiencies": [
+            "History",
+            "Survival"
+        ],
+        "languages": [
+            "One of your choice"
+        ],
+        "starting_items": [
+            "Fishing tackle",
+            "A net",
+            "A favorite fishing lure or oiled leather wading boots",
+            "A set of traveler's clothes",
+            "A belt pouch containing 10 gp"
+        ],
+        "features": [
+            "Harvest the Water: You gain advantage on ability checks made using fishing tackle. If you have access to a body of water that sustains marine life, you can maintain a moderate lifestyle while working as a fisher, and you can catch enough food to feed yourself and up to ten other people each day."
+        ]
+    },
+    {
+        "name": "Folk Hero",
+        "description": "",
+        "skill_proficiencies": [
+            "Animal Handling",
+            "Survival"
+        ],
+        "tool_proficiencies": [
+            "One type of artisan's tools",
+            "Vehicles (land)"
+        ],
+        "starting_items": [
+            "A set of artisan's tools (one of your choice)",
+            "A shovel",
+            "An iron pot",
+            "A set of common clothes",
+            "A belt pouch containing 10 gp"
+        ],
+        "features": [
+            "Rustic Hospitality: Since you come from the ranks of the common folk, you fit in among them with ease. You can find a place to hide, rest, or recuperate among other commoners, unless you have shown yourself to be a danger to them. They will shield you from the law or anyone else searching for you, though they will not risk their lives for you."
+        ]
+    },
+    {
+        "name": "Gambler",
+        "description": "",
+        "skill_proficiencies": [
+            "Deception",
+            "Insight"
+        ],
+        "tool_proficiencies": [
+            "One gaming set"
+        ],
+        "languages": [
+            "Any one of your choice"
+        ],
+        "starting_items": [
+            "One gaming set",
+            "A lucky charm",
+            "A set of fine clothes",
+            "A belt pouch containing 15 gp"
+        ],
+        "features": [
+            "Never Tell Me the Odds: Odds and probability are your bread and butter. During downtime activities that involve games of chance or figuring odds on the best plan, you can get a solid sense of which choice is likely the best one and which opportunities seem too good to be true, at the DM's determination."
+        ]
+    },
+    {
+        "name": "Gate Urchin",
+        "description": "",
+        "skill_proficiencies": [
+            "Sleight of Hand",
+            "Stealth"
+        ],
+        "tool_proficiencies": [
+            "Disguise kit",
+            "Thieves' tools"
+        ],
+        "starting_items": [
+            "A small knife",
+            "A map of the city you grew up in",
+            "A pet mouse",
+            "A token to remember your parents by",
+            "A set of common clothes",
+            "A belt pouch containing 10 gp"
+        ],
+        "features": [
+            "City Secrets: You know the secret patterns and flow to cities and can find passages through the urban sprawl that others would miss. When you are not in combat, you (and companions you lead) can travel between any two locations in the city twice as fast as your speed would normally allow."
+        ]
+    },
+    {
+        "name": "Gladiator",
+        "description": "",
+        "skill_proficiencies": [
+            "Acrobatics",
+            "Performance"
+        ],
+        "tool_proficiencies": [
+            "Disguise kit",
+            "one type of musical instrument"
+        ],
+        "starting_items": [
+            "An inexpensive but unusual weapon",
+            "Such as a trident or net (one of your choice)",
+            "The favor of an admirer (love letter, lock of hair, or trinket)",
+            "Costume clothes",
+            "A belt pouch containing 15 gp"
+        ],
+        "features": [
+            "By Popular Demand: You can always find a place to perform in any place that features combat for entertainment—perhaps a gladiatorial arena or secret pit fighting club. At such a place, you receive free lodging and food of a modest or comfortable standard (depending on the quality of the establishment), as long as you perform each night. In addition, your performance makes you something of a local figure. When strangers recognize you in a town where you have performed, they typically take a liking to you."
+        ]
+    },
+    {
+        "name": "Golgari Agent",
+        "description": "",
+        "skill_proficiencies": [
+            "Nature",
+            "Survival"
+        ],
+        "tool_proficiencies": [
+            "Poisoner's kit"
+        ],
+        "languages": [
+            "Choose one of Elvish, Giant, or Kraul"
+        ],
+        "features": [
+            "Undercity Paths: You know hidden, underground pathways that you can use to bypass crowds, obstacles, and observation as you move through the city. When you aren't in combat, you and companions you lead can travel between any two locations in the city twice as fast as your speed would normally allow. The paths of the undercity are haunted by dangers that rarely brave the light of the surface world, so your journey isn't guaranteed to be safe."
+        ]
+    },
+    {
+        "name": "Grinner",
+        "description": "",
+        "skill_proficiencies": [
+            "Deception",
+            "Performance"
+        ],
+        "tool_proficiencies": [
+            "One type of musical instrument",
+            "thieves' tools"
+        ],
+        "starting_items": [
+            "A set of fine clothes",
+            "A disguise kit",
+            "A musical instrument of your choice",
+            "A gold-plated ring depicting a smiling face",
+            "A pouch containing 15 gp"
+        ],
+        "features": [
+            "Ballad of the Grinning Fool: Like every Grinner, you know how to find a hideout. In any city of 10,000 people or more on the Menagerie Coast or in the lands of the Dwendalian Empire, you can play the 'Ballad of the Grinning Fool' in a major tavern or inn. A member of the Golden Grin will find you and give shelter to you and any companions you vouch for. This shelter might be discontinued if it becomes too dangerous to hide you, at the DM's discretion.  This feature must be used with caution, for not all who know the ballad are your friends. Some are traitors, counterspies, or agents of tyranny."
+        ]
+    },
+    {
+        "name": "Gruul Anarch",
+        "description": "",
+        "skill_proficiencies": [
+            "Animal Handling",
+            "Athletics"
+        ],
+        "tool_proficiencies": [
+            "Herbalism kit"
+        ],
+        "starting_items": [
+            "A Gruul insignia",
+            "A hunting trap",
+            "An herbalism kit",
+            "The skull of a boar",
+            "A beast-hide cloak",
+            "A set of traveler's clothes",
+            "A belt pouch containing 10 gp (Azorius 1-zino coins)"
+        ],
+        "features": [
+            "Rubblebelt Refuge: You are intimately familiar with areas of the city that most people shun: ruined neighborhoods where wurms rampaged, overgrown parks that no hand has tended in decades, and the vast, sprawling rubblebelts of broken terrain that civilized folk have long abandoned. You can find a suitable place for you and your allies to hide or rest in these areas. In addition, you can find food and fresh water in these areas for yourself and up to five other people each day."
+        ]
+    },
+    {
+        "name": "Guild Merchant",
+        "description": "",
+        "skill_proficiencies": [
+            "Insight",
+            "Persuasion"
+        ],
+        "tool_proficiencies": [
+            "One type of artisan's tools or navigator's tools or an additional language"
+        ],
+        "languages": [
+            "One of your choice"
+        ],
+        "starting_items": [
+            "A set of artisan's tools (one of your choice) or a mule and cart",
+            "A letter of introduction from your guild",
+            "A set of traveler's clothes",
+            "A belt pouch containing 15 gp"
+        ],
+        "features": [
+            "Guild Membership: As an established and respected member of a guild, you can rely on certain benefits that membership provides. Your fellow guild members will provide you with lodging and food if necessary, and pay for your funeral if needed. In some cities and towns, a guildhall offers a central place to meet other members of your profession, which can be a good place to meet potential patrons, allies, or hirelings.  Guilds often wield tremendous political power. If you are accused of a crime, your guild will support you if a good case can be made for your innocence or the crime is justifiable. You can also gain access to powerful political figures through the guild, if you are a member in good standing. Such connections might require the donation of money or magic items to the guild's coffers.  You must pay dues of 5 gp per month to the guild. If you miss payments, you must make up back dues to remain in the guild's good graces."
+        ]
+    },
+    {
+        "name": "Haunted One",
+        "description": "",
+        "skill_proficiencies": [
+            "Arcana",
+            "Investigation",
+            "Religion",
+            "Survival"
+        ],
+        "languages": [
+            "Choose two, one of which must be Abyssal, Celestial, Deep Speech, Draconic, Infernal, Primordial, Sylvan, or Undercommon"
+        ],
+        "starting_items": [
+            "Equipment: Monster hunter's pack (containing a chest, a crowbar, a hammer, three wooden stakes, a holy symbol, a flask of holy water, a set of manacles, a steel mirror, a flask of oil, a tinderbox, and 3 torches)",
+            "A set of common clothes",
+            "Special significance (choose one or roll on the Horror Trinkets table)",
+            "1 sp"
+        ],
+        "features": [
+            "Heart of Darkness: Those who look into your eyes can see that you have faced unimaginable horror and that you are no stranger to darkness. Though they might fear you, commoners will extend you every courtesy and do their utmost to help you. Unless you have shown yourself to be a danger to them, they will even take up arms to fight alongside you, should you find yourself facing an enemy alone."
+        ]
+    },
+    {
+        "name": "Hermit",
+        "description": "",
+        "skill_proficiencies": [
+            "Medicine",
+            "Religion"
+        ],
+        "tool_proficiencies": [
+            "Herbalism kit"
+        ],
+        "languages": [
+            "One of your choice"
+        ],
+        "starting_items": [
+            "A scroll case stuffed full of notes from your studies or prayers",
+            "A winter blanket",
+            "A set of common clothes",
+            "An herbalism kit",
+            "5 gp"
+        ],
+        "features": [
+            "Discovery: The quiet seclusion of your extended hermitage gave you access to a unique and powerful discovery. The exact nature of this revelation depends on the nature of your seclusion. It might be a great truth about the cosmos, the deities, the powerful beings of the outer planes, or the forces of nature. It could be a site that no one else has ever seen. You might have uncovered a fact that has long been forgotten, or unearthed some relic of the past that could rewrite history. It might be information that would be damaging to the people who or consigned you to exile, and hence the reason for your return to society.  Work with your DM to determine the details of your discovery and its impact on the campaign."
+        ]
+    },
+    {
+        "name": "House Agent Cannith",
+        "description": "",
+        "skill_proficiencies": [
+            "Investigation",
+            "Persuasion"
+        ],
+        "tool_proficiencies": [
+            "Alchemist's supplies",
+            "tinker's tools"
+        ],
+        "starting_items": [
+            "A set of fine clothes",
+            "House signet ring",
+            "Identification papers",
+            "A purse containing 20 gp"
+        ],
+        "features": [
+            "House Connections: As an agent of your house, you can always get food and lodging for yourself and your friends at a house enclave. When the house assigns you a mission, it will usually provide you with the necessary supplies and transportation. Beyond this, you have many old friends, mentors, and rivals in your house, and you may encounter one of them when you interact with a house business. The degree to which such acquaintances are willing to help you depends on your current standing in your house."
+        ]
+    },
+    {
+        "name": "House Agent Deneith",
+        "description": "",
+        "skill_proficiencies": [
+            "Investigation",
+            "Persuasion"
+        ],
+        "tool_proficiencies": [
+            "One gaming set",
+            "Vehicles (land)"
+        ],
+        "starting_items": [
+            "A set of fine clothes",
+            "House signet ring",
+            "Identification papers",
+            "A purse containing 20 gp"
+        ],
+        "features": [
+            "House Connections: As an agent of your house, you can always get food and lodging for yourself and your friends at a house enclave. When the house assigns you a mission, it will usually provide you with the necessary supplies and transportation. Beyond this, you have many old friends, mentors, and rivals in your house, and you may encounter one of them when you interact with a house business. The degree to which such acquaintances are willing to help you depends on your current standing in your house."
+        ]
+    },
+    {
+        "name": "House Agent Ghallanda",
+        "description": "",
+        "skill_proficiencies": [
+            "Investigation",
+            "Persuasion"
+        ],
+        "tool_proficiencies": [
+            "Brewer's supplies",
+            "Cook's utensils"
+        ],
+        "starting_items": [
+            "A set of fine clothes",
+            "House signet ring",
+            "Identification papers",
+            "A purse containing 20 gp"
+        ],
+        "features": [
+            "House Connections: As an agent of your house, you can always get food and lodging for yourself and your friends at a house enclave. When the house assigns you a mission, it will usually provide you with the necessary supplies and transportation. Beyond this, you have many old friends, mentors, and rivals in your house, and you may encounter one of them when you interact with a house business. The degree to which such acquaintances are willing to help you depends on your current standing in your house."
+        ]
+    },
+    {
+        "name": "House Agent Jorasco",
+        "description": "",
+        "skill_proficiencies": [
+            "Investigation",
+            "Persuasion"
+        ],
+        "tool_proficiencies": [
+            "Alchemist's supplies",
+            "Herbalism kit"
+        ],
+        "starting_items": [
+            "A set of fine clothes",
+            "House signet ring",
+            "Identification papers",
+            "A purse containing 20 gp"
+        ],
+        "features": [
+            "House Connections: As an agent of your house, you can always get food and lodging for yourself and your friends at a house enclave. When the house assigns you a mission, it will usually provide you with the necessary supplies and transportation. Beyond this, you have many old friends, mentors, and rivals in your house, and you may encounter one of them when you interact with a house business. The degree to which such acquaintances are willing to help you depends on your current standing in your house."
+        ]
+    },
+    {
+        "name": "House Agent Kundarak",
+        "description": "",
+        "skill_proficiencies": [
+            "Investigation",
+            "Persuasion"
+        ],
+        "tool_proficiencies": [
+            "Thieves' tools",
+            "Tinker's tools"
+        ],
+        "starting_items": [
+            "A set of fine clothes",
+            "House signet ring",
+            "Identification papers",
+            "A purse containing 20 gp"
+        ],
+        "features": [
+            "House Connections: As an agent of your house, you can always get food and lodging for yourself and your friends at a house enclave. When the house assigns you a mission, it will usually provide you with the necessary supplies and transportation. Beyond this, you have many old friends, mentors, and rivals in your house, and you may encounter one of them when you interact with a house business. The degree to which such acquaintances are willing to help you depends on your current standing in your house."
+        ]
+    },
+    {
+        "name": "House Agent Lyrandar",
+        "description": "",
+        "skill_proficiencies": [
+            "Investigation",
+            "Persuasion"
+        ],
+        "tool_proficiencies": [
+            "Navigator's tools",
+            "Vehicles (sea and air)"
+        ],
+        "starting_items": [
+            "A set of fine clothes",
+            "House signet ring",
+            "Identification papers",
+            "A purse containing 20 gp"
+        ],
+        "features": [
+            "House Connections: As an agent of your house, you can always get food and lodging for yourself and your friends at a house enclave. When the house assigns you a mission, it will usually provide you with the necessary supplies and transportation. Beyond this, you have many old friends, mentors, and rivals in your house, and you may encounter one of them when you interact with a house business. The degree to which such acquaintances are willing to help you depends on your current standing in your house."
+        ]
+    },
+    {
+        "name": "House Agent Medani",
+        "description": "",
+        "skill_proficiencies": [
+            "Investigation",
+            "Persuasion"
+        ],
+        "tool_proficiencies": [
+            "Disguise kit",
+            "Thieves' tools"
+        ],
+        "starting_items": [
+            "A set of fine clothes",
+            "House signet ring",
+            "Identification papers",
+            "A purse containing 20 gp"
+        ],
+        "features": [
+            "House Connections: As an agent of your house, you can always get food and lodging for yourself and your friends at a house enclave. When the house assigns you a mission, it will usually provide you with the necessary supplies and transportation. Beyond this, you have many old friends, mentors, and rivals in your house, and you may encounter one of them when you interact with a house business. The degree to which such acquaintances are willing to help you depends on your current standing in your house."
+        ]
+    },
+    {
+        "name": "House Agent Orien",
+        "description": "",
+        "skill_proficiencies": [
+            "Investigation",
+            "Persuasion"
+        ],
+        "tool_proficiencies": [
+            "One gaming set",
+            "Vehicles (land)"
+        ],
+        "starting_items": [
+            "A set of fine clothes",
+            "House signet ring",
+            "Identification papers",
+            "A purse containing 20 gp"
+        ],
+        "features": [
+            "House Connections: As an agent of your house, you can always get food and lodging for yourself and your friends at a house enclave. When the house assigns you a mission, it will usually provide you with the necessary supplies and transportation. Beyond this, you have many old friends, mentors, and rivals in your house, and you may encounter one of them when you interact with a house business. The degree to which such acquaintances are willing to help you depends on your current standing in your house."
+        ]
+    },
+    {
+        "name": "House Agent Phiarlan",
+        "description": "",
+        "skill_proficiencies": [
+            "Investigation",
+            "Persuasion"
+        ],
+        "tool_proficiencies": [
+            "Disguise kit",
+            "One musical instrument"
+        ],
+        "starting_items": [
+            "A set of fine clothes",
+            "House signet ring",
+            "Identification papers",
+            "A purse containing 20 gp"
+        ],
+        "features": [
+            "House Connections: As an agent of your house, you can always get food and lodging for yourself and your friends at a house enclave. When the house assigns you a mission, it will usually provide you with the necessary supplies and transportation. Beyond this, you have many old friends, mentors, and rivals in your house, and you may encounter one of them when you interact with a house business. The degree to which such acquaintances are willing to help you depends on your current standing in your house."
+        ]
+    },
+    {
+        "name": "House Agent Sivis",
+        "description": "",
+        "skill_proficiencies": [
+            "Investigation",
+            "Persuasion"
+        ],
+        "tool_proficiencies": [
+            "Calligrapher's supplies",
+            "Forgery kit"
+        ],
+        "starting_items": [
+            "A set of fine clothes",
+            "House signet ring",
+            "Identification papers",
+            "A purse containing 20 gp"
+        ],
+        "features": [
+            "House Connections: As an agent of your house, you can always get food and lodging for yourself and your friends at a house enclave. When the house assigns you a mission, it will usually provide you with the necessary supplies and transportation. Beyond this, you have many old friends, mentors, and rivals in your house, and you may encounter one of them when you interact with a house business. The degree to which such acquaintances are willing to help you depends on your current standing in your house."
+        ]
+    },
+    {
+        "name": "House Agent Tharashk",
+        "description": "",
+        "skill_proficiencies": [
+            "Investigation",
+            "Persuasion"
+        ],
+        "tool_proficiencies": [
+            "One gaming set",
+            "Thieves' tools"
+        ],
+        "starting_items": [
+            "A set of fine clothes",
+            "House signet ring",
+            "Identification papers",
+            "A purse containing 20 gp"
+        ],
+        "features": [
+            "House Connections: As an agent of your house, you can always get food and lodging for yourself and your friends at a house enclave. When the house assigns you a mission, it will usually provide you with the necessary supplies and transportation. Beyond this, you have many old friends, mentors, and rivals in your house, and you may encounter one of them when you interact with a house business. The degree to which such acquaintances are willing to help you depends on your current standing in your house."
+        ]
+    },
+    {
+        "name": "House Agent Thuranni",
+        "description": "",
+        "skill_proficiencies": [
+            "Investigation",
+            "Persuasion"
+        ],
+        "tool_proficiencies": [
+            "One musical instrument",
+            "Poisoner's kit"
+        ],
+        "starting_items": [
+            "A set of fine clothes",
+            "House signet ring",
+            "Identification papers",
+            "A purse containing 20 gp"
+        ],
+        "features": [
+            "House Connections: As an agent of your house, you can always get food and lodging for yourself and your friends at a house enclave. When the house assigns you a mission, it will usually provide you with the necessary supplies and transportation. Beyond this, you have many old friends, mentors, and rivals in your house, and you may encounter one of them when you interact with a house business. The degree to which such acquaintances are willing to help you depends on your current standing in your house."
+        ]
+    },
+    {
+        "name": "House Agent Vadalis",
+        "description": "",
+        "skill_proficiencies": [
+            "Investigation",
+            "Persuasion"
+        ],
+        "tool_proficiencies": [
+            "Herbalism kit",
+            "Vehicles (land)"
+        ],
+        "starting_items": [
+            "A set of fine clothes",
+            "House signet ring",
+            "Identification papers",
+            "A purse containing 20 gp"
+        ],
+        "features": [
+            "House Connections: As an agent of your house, you can always get food and lodging for yourself and your friends at a house enclave. When the house assigns you a mission, it will usually provide you with the necessary supplies and transportation. Beyond this, you have many old friends, mentors, and rivals in your house, and you may encounter one of them when you interact with a house business. The degree to which such acquaintances are willing to help you depends on your current standing in your house."
+        ]
+    },
+    {
+        "name": "Inheritor",
+        "description": "",
+        "skill_proficiencies": [
+            "Survival",
+            "Plus one from among Arcana, History, and Religion"
+        ],
+        "tool_proficiencies": [
+            "Your choice of a gaming set",
+            "A musical instrument"
+        ],
+        "starting_items": [
+            "Your inheritance",
+            "A set of traveler's clothes",
+            "The tool you choose for this background's tool proficiency (gaming set or musical instrument)",
+            "A pouch containing 15 gp"
+        ],
+        "features": [
+            "Inheritance: Choose or randomly determine your inheritance from the possibilities in the table below. Work with your Dungeon Master to come up with details: Why is your inheritance so important, and what is its full story? You might prefer for the DM to invent these details as part of the game, allowing you to learn more about your inheritance as your character does.  The Dungeon Master is free to use your inheritance as a story hook, sending you on quests to learn more about its history or true nature, or confronting you with foes who want to claim it for themselves or prevent you from learning what you seek. The DM also determines the properties of your inheritance and how they figure into the item's history and importance. For instance, the object might be a minor magic item, or one that begins with a modest ability and increases in potency with the passage of time. Or, the true nature of your inheritance might not be apparent at first and is revealed only when certain conditions are met.  When you begin your adventuring career, you can decide whether to tell your companions about your inheritance right away. Rather than attracting attention to yourself, you might want to keep your inheritance a secret until you learn more about what it means to you and what it can do for you."
+        ]
+    },
+    {
+        "name": "Selesnya Initiate",
+        "description": "",
+        "skill_proficiencies": [
+            "Nature",
+            "Persuasion"
+        ],
+        "tool_proficiencies": [
+            "One type of artisan's tools or one musical instrument"
+        ],
+        "languages": [
+            "Choose one of Elvish, Loxodon, or Sylvan"
+        ],
+        "starting_items": [
+            "A Selesnya insignia",
+            "A healer's kit",
+            "Robes",
+            "A set of common clothes",
+            "A belt pouch containing 5 gp (Azorius 1-zino coins)"
+        ],
+        "features": [
+            "Conclave's Shelter: As a member of the Selesnya Conclave, you can count on your guild mates to provide shelter and aid. You and your companions can find a place to hide or rest in any Selesnya enclave in the city, unless you have proven to be a danger to them. The members of the enclave will shield you from the law or anyone else searching for you, though they will not risk their lives in this effort.  In addition, as a guild member you can receive free healing and care at a Selesnya enclave, though you must provide any material components needed for spells."
+        ]
+    },
+    {
+        "name": "Investigator",
+        "description": "",
+        "skill_proficiencies": [
+            "Choose two from among Insight, Investigation, or Perception"
+        ],
+        "tool_proficiencies": [
+            "Disguise kit",
+            "Thieves' tools"
+        ],
+        "starting_items": [
+            "A magnifying glass",
+            "Evidence from a past case (choose one or roll for a trinket from the Horror Trinkets later in this chapter)",
+            "A set of common clothes",
+            "10 gp"
+        ],
+        "features": [
+            "Official Inquiry: You're experienced at gaining access to people and places to get the information you need. Through a combination of fast-talking, determination, and official-looking documentation, you can gain access to a place or an individual related to a crime you're investigating. Those who aren't involved in your investigation avoid impeding you or pass along your requests. Additionally, local law enforcement has firm opinions about you, viewing you as either a nuisance or one of their own."
+        ]
+    },
+    {
+        "name": "Izzet Engineer",
+        "description": "",
+        "skill_proficiencies": [
+            "Arcana",
+            "Investigation"
+        ],
+        "tool_proficiencies": [
+            "One type of artisan's tools"
+        ],
+        "languages": [
+            "Choose one of Draconic, Goblin, or Vedalken"
+        ],
+        "starting_items": [
+            "An Izzet insignia",
+            "One set of artisan's tools",
+            "The charred and twisted remains of a failed experiment",
+            "A hammer",
+            "A block and tackle",
+            "A set of common clothes",
+            "A belt pouch containing 5 gp (Azorius 1-zino coins)"
+        ],
+        "features": [
+            "Urban Infrastructure: The popular conception of the Izzet League is based on mad inventions, dangerous experiments, and explosive blasts. Much of that perception is accurate, but the league is also involved with mundane tasks of construction and architecture—primarily in crafting the infrastructure that allows Ravnicans to enjoy running water, levitating platforms, and other magical and technological wonders.  You have a basic knowledge of the structure of buildings, including the stuff behind the walls. You can also find blueprints of a specific building in order to learn the details of its construction. Such blueprints might provide knowledge of entry points, structural weaknesses, or secret spaces. Your access to such information isn't unlimited. If obtaining or using the information gets you in trouble with the law, the guild can't shield you from the repercussions."
+        ]
+    },
+    {
+        "name": "Knight",
+        "description": "",
+        "skill_proficiencies": [
+            "History",
+            "Persuasion"
+        ],
+        "tool_proficiencies": [
+            "One type of gaming set"
+        ],
+        "languages": [
+            "One of your choice"
+        ],
+        "starting_items": [
+            "A set of fine clothes",
+            "A signet ring",
+            "A scroll of pedigree",
+            "A purse containing 25 gp"
+        ],
+        "features": [
+            "Retainers: You have the service of three retainers loyal to your family. These retainers can be attendants or messengers, and one might be a majordomo. One of your retainers is a noble who serves as your squire, aiding you in exchange for training on his or her own path to knighthood (This person could be your bond.). Your two remaining retainers might include a groom to care for your horse and a servant who polishes your armor (and even helps you put it on).  Your retainers can perform mundane tasks for you, but they do not fight for you, will not follow you into obviously dangerous areas (such as dungeons), and will leave if they are frequently endangered or abused."
+        ]
+    },
+    {
+        "name": "Knight of the Order",
+        "description": "",
+        "skill_proficiencies": [
+            "Persuasion",
+            "One from among Arcana, History, Nature, and Religion, as appropriate for your order"
+        ],
+        "tool_proficiencies": [
+            "Your choice of a gaming set or a musical instrument"
+        ],
+        "languages": [
+            "Any one of your choice"
+        ],
+        "starting_items": [
+            "One set of traveler's clothes",
+            "A signet",
+            "Banner",
+            "Seal representing your place or rank in the order",
+            "A pouch containing 10 gp"
+        ],
+        "features": [
+            "Knightly Regard: You receive shelter and succor from members of your knightly order and those who are sympathetic to its aims. If your order is a religious one, you can gain aid from temples and other religious communities of your deity. Knights of civic orders can get help from the community—whether a lone settlement or a great nation—that they serve, and knights of philosophical orders can find help from those they have aided in pursuit of their ideals, and those who share their ideals.  This help comes in the form of shelter and meals, and healing when appropriate, as well as occasionally risky assistance, such as a band of local citizens rallying to aid a sorely pressed knight, or those who support the order helping to smuggle a knight out of town when he or she is being hunted unjustly."
+        ]
+    },
+    {
+        "name": "Lorehold Student",
+        "description": "",
+        "skill_proficiencies": [
+            "History",
+            "Religion"
+        ],
+        "languages": [
+            "Two of your choice"
+        ],
+        "starting_items": [
+            "A bottle of black ink",
+            "An ink pen",
+            "A hammer",
+            "A hooded lantern",
+            "A tinderbox",
+            "A tome of history",
+            "A school uniform",
+            "A pouch containing 15 gp"
+        ],
+        "features": [
+            "Lorehold Initiate: You gain the Strixhaven Initiate feat and must choose Lorehold within it.  In addition, if you have the Spellcasting or Pact Magic feature, the spells on the Lorehold Spells table are added to the spell list of your spellcasting class. (If you are a multiclass character with multiple spell lists, these spells are added to all of them.)"
+        ]
+    },
+    {
+        "name": "Marine",
+        "description": "",
+        "skill_proficiencies": [
+            "Athletics",
+            "Survival"
+        ],
+        "tool_proficiencies": [
+            "Vehicles (water, land)"
+        ],
+        "starting_items": [
+            "A dagger that belonged to a fallen comrade",
+            "A folded flag emblazoned with the symbol of your ship or company",
+            "A set of traveler's clothes",
+            "A belt pouch containing 10 gp"
+        ],
+        "features": [
+            "Steady: You can move twice the normal amount of time (up to 16 hours) each day before being subject to the effect of a forced march (see 'Travel Pace' in chapter 8 of the Player's Handbook). Additionally, you can automatically find a safe route to land a boat on shore, provided such a route exists."
+        ]
+    },
+    {
+        "name": "Mercenary Veteran",
+        "description": "",
+        "skill_proficiencies": [
+            "Athletics",
+            "Persuasion"
+        ],
+        "tool_proficiencies": [
+            "One type of gaming set",
+            "Vehicles (land)"
+        ],
+        "starting_items": [
+            "A uniform of your company (traveler's clothes in quality)",
+            "An insignia of your rank",
+            "A gaming set of your choice",
+            "A pouch containing the remainder of your last wages (10 gp)"
+        ],
+        "features": [
+            "Mercenary Life: You know the mercenary life as only someone who has experienced it can. You are able to identify mercenary companies by their emblems, and you know a little about any such company, including who has hired them recently. You can find the taverns and festhalls where mercenaries abide in any area, as long as you speak the language. You can find mercenary work between adventures sufficient to maintain a comfortable lifestyle (see 'Practicing a Profession' under 'Downtime Activities' in chapter 8 of the Player's Handbook)."
+        ]
+    },
+    {
+        "name": "Noble",
+        "description": "",
+        "skill_proficiencies": [
+            "History",
+            "Persuasion"
+        ],
+        "tool_proficiencies": [
+            "One type of gaming set"
+        ],
+        "languages": [
+            "One of your choice"
+        ],
+        "starting_items": [
+            "A set of fine clothes",
+            "A signet ring",
+            "A scroll of pedigree",
+            "A purse containing 25 gp"
+        ],
+        "features": [
+            "Position of Privilege: Thanks to your noble birth, people are inclined to think the best of you. You are welcome in high society, and people assume you have the right to be wherever you are. The common folk make every effort to accommodate you and avoid your displeasure, and other people of high birth treat you as a member of the same social sphere. You can secure an audience with a local noble if you need to."
+        ]
+    },
+    {
+        "name": "Outlander",
+        "description": "",
+        "skill_proficiencies": [
+            "Athletics",
+            "Survival"
+        ],
+        "tool_proficiencies": [
+            "One type of musical instrument"
+        ],
+        "languages": [
+            "One of your choice"
+        ],
+        "starting_items": [
+            "A staff",
+            "A hunting trap",
+            "A trophy from an animal you killed",
+            "A set of traveler's clothes",
+            "A belt pouch containing 10 gp"
+        ],
+        "features": [
+            "Wanderer: You have an excellent memory for maps and geography, and you can always recall the general layout of terrain, settlements, and other features around you. In addition, you can find food and fresh water for yourself and up to five other people each day, provided that the land offers berries, small game, water, and so forth."
+        ]
+    },
+    {
+        "name": "Pirate",
+        "description": "",
+        "skill_proficiencies": [
+            "Athletics",
+            "Perception"
+        ],
+        "tool_proficiencies": [
+            "Navigator's tools",
+            "Vehicles (water)"
+        ],
+        "starting_items": [
+            "A belaying ping (club)",
+            "silk rope (50 feet)",
+            "A lucky charm such as a rabbit foot or a small stone with a hole in the center (or you may roll for a random trinket on the Trinkets table in chapter 5),",
+            "A set of common clothes",
+            "A belt pouch containing 10 gp"
+        ],
+        "features": [
+            "Bad Reputation: No matter where you go, people are afraid of you due to your reputation. When you are in a civilized settlement, you can get away with minor criminal offenses, such as refusing to pay for food at a tavern or breaking down doors at a local shop, since most people will not report your activity to the authorities."
+        ]
+    },
+    {
+        "name": "Plaintiff",
+        "description": "",
+        "skill_proficiencies": [
+            "Medicine",
+            "Persuasion"
+        ],
+        "tool_proficiencies": [
+            "One type of artisan's tools"
+        ],
+        "languages": [
+            "Any one of your choice"
+        ],
+        "starting_items": [
+            "One set of artisan's tools",
+            "Fine clothes",
+            "20 gp"
+        ],
+        "features": [
+            "Legalese: Your experience with your local legal system has given you a firm knowledge of the ins and outs of that system. Even when the law is not on your side, you can use complex terms like ex injuria jus non oritur and cogitationis poenam nemo patitur to frighten people into thinking you know what you're talking about. With common folks who don't know any better, you might be able to intimidate or deceive to get favors or special treatment."
+        ]
+    },
+    {
+        "name": "Prismari Student",
+        "description": "",
+        "skill_proficiencies": [
+            "Acrobatics",
+            "Performance"
+        ],
+        "tool_proficiencies": [
+            "One type of musical instrument or artisan's tools"
+        ],
+        "languages": [
+            "One of your choice"
+        ],
+        "starting_items": [
+            "A bottle of black ink",
+            "An ink pen",
+            "A set of artisan's tools ofr a musical instrument (one of your choice)",
+            "A school uniform",
+            "A pouch containing 10 gp"
+        ],
+        "features": [
+            "Prismari Initiate: You gain the Strixhaven Initiate feat and must choose Prismari within it.  In addition, if you have the Spellcasting or Pact Magic feature, the spells on the Prismari Spells table are added to the spell list of your spellcasting class. (If you are a multiclass character with multiple spell lists, these spells are added to all of them.)"
+        ]
+    },
+    {
+        "name": "Quandrix Student",
+        "description": "",
+        "skill_proficiencies": [
+            "Arcana",
+            "Nature"
+        ],
+        "tool_proficiencies": [
+            "One type of artisan's tools"
+        ],
+        "languages": [
+            "One of your choice"
+        ],
+        "starting_items": [
+            "A bottle of black ink",
+            "An ink pen",
+            "An abacus",
+            "A book of arcane theory",
+            "A school uniform",
+            "A pouch containing 15 gp"
+        ],
+        "features": [
+            "Quandrix Initiate: You gain the Strixhaven Initiate feat and must choose Quandrix within it.  In addition, if you have the Spellcasting or Pact Magic feature, the spells on the Quandrix Spells table are added to the spell list of your spellcasting class. (If you are a multiclass character with multiple spell lists, these spells are added to all of them.)"
+        ]
+    },
+    {
+        "name": "Rakdos Cultist",
+        "description": "",
+        "skill_proficiencies": [
+            "Acrobatics",
+            "Perception"
+        ],
+        "tool_proficiencies": [
+            "One type of musical instrument"
+        ],
+        "languages": [
+            "Choose either Abyssal or Giant"
+        ],
+        "starting_items": [
+            "A Rakdos insignia",
+            "A musical instrument (one of your choice)",
+            "A costume",
+            "A hooded lantern made of wrought iron",
+            "A 10-foot length of chain with sharply spiked links",
+            "A tinderbox",
+            "10 torches",
+            "A set of common clothes",
+            "A belt pouch containing 10 gp (a mix of Azorius and Boros 1-zino coins)",
+            "A bottle of sweet, red juice"
+        ],
+        "features": [
+            "Fearsome Reputation: People recognize you as a member of the Cult of Rakdos, and they're careful not to draw your anger or ridicule. You can get away with minor criminal offenses, such as refusing to pay for food at a restaurant or breaking down a door at a local shop, if no legal authorities witness the crime. Most people are too daunted by you to report your wrongdoing to the Azorius."
+        ]
+    },
+    {
+        "name": "Rival Intern",
+        "description": "",
+        "skill_proficiencies": [
+            "History",
+            "Investigation"
+        ],
+        "tool_proficiencies": [
+            "One type of artisan's tools"
+        ],
+        "languages": [
+            "Any one of your choice"
+        ],
+        "starting_items": [
+            "One set of artisan's tools",
+            "A ledger from your previous employer containing a small piece of useful information",
+            "A set of fine clothes",
+            "A belt pouch containing 10 gp"
+        ],
+        "features": [
+            "Inside Informant: You have connections to your previous employer or other groups you dealt with during your previous employment. You can communicate with your contacts, gaining information at the DM's discretion."
+        ]
+    },
+    {
+        "name": "Sage",
+        "description": "",
+        "skill_proficiencies": [
+            "Arcana",
+            "History"
+        ],
+        "languages": [
+            "Two of your choice"
+        ],
+        "starting_items": [
+            "A bottle of black ink",
+            "A quill",
+            "A small knife",
+            "A letter from a dead colleague posing a question you have not yet been able to answer",
+            "A set of common clothes",
+            "A belt pouch containing 10 gp"
+        ],
+        "features": [
+            "Researcher: When you attempt to learn or recall a piece of lore, if you do not know that information, you often know where and from whom you can obtain it. Usually, this information comes from a library, scriptorium, university, or a sage or other learned person or creature. Your DM might rule that the knowledge you seek is secreted away in an almost inaccessible place, or that it simply cannot be found. Unearthing the deepest secrets of the multiverse can require an adventure or even a whole campaign."
+        ]
+    },
+    {
+        "name": "Sailor",
+        "description": "",
+        "skill_proficiencies": [
+            "Athletics",
+            "Perception"
+        ],
+        "tool_proficiencies": [
+            "Navigator's tools",
+            "Vehicles (water)"
+        ],
+        "starting_items": [
+            "A belaying pin (club)",
+            "Silk rope (50 feet)",
+            "A lucky charm such as a rabbit foot or a small stone with a hole in the center (or you may roll for a random trinket on the Trinkets table in chapter 5)",
+            "A set of common clothes",
+            "A belt pouch containing 10 gp"
+        ],
+        "features": [
+            "Ship's Passage: When you need to, you can secure free passage on a sailing ship for yourself and your adventuring companions. You might sail on the ship you served on, or another ship you have good relations with (perhaps one captained by a former crewmate). Because you're calling in a favor, you can't be certain of a schedule or route that will meet your every need. Your Dungeon Master will determine how long it takes to get where you need to go. In return for your free passage, you and your companions are expected to assist the crew during the voyage."
+        ]
+    },
+    {
+        "name": "Shipwright",
+        "description": "",
+        "skill_proficiencies": [
+            "History",
+            "Perception"
+        ],
+        "tool_proficiencies": [
+            "Carpenter's tools",
+            "Vehicles (water)"
+        ],
+        "starting_items": [
+            "A set of well-loved carpenter's tools",
+            "A blank book",
+            "1 ounce of ink",
+            "An ink pen",
+            "A set of traveler's clothes",
+            "A leather pouch with 10 gp"
+        ],
+        "features": [
+            "I'll Patch It!: Provided you have carpenter's tools and wood, you can perform repairs on a water vehicle. When you use this ability, you restore a number of hit points to the hull of a water vehicle equal to 5 × your proficiency modifier. A vehicle cannot be patched by you in this way again until after it has been pulled ashore and fully repaired."
+        ]
+    },
+    {
+        "name": "Silverqull Student",
+        "description": "",
+        "skill_proficiencies": [
+            "Intimidation",
+            "Persuasion"
+        ],
+        "languages": [
+            "Two of your choice"
+        ],
+        "starting_items": [
+            "A bottle of black ink",
+            "An ink pen",
+            "A book of poetry",
+            "A school uniform",
+            "A pouch containing 15 gp"
+        ],
+        "features": [
+            "Silverquill Initiate : You gain the Strixhaven Initiate feat and must choose Silverquill within it.  In addition, if you have the Spellcasting or Pact Magic feature, the spells on the Silverquill Spells table are added to the spell list of your spellcasting class. (If you are a multiclass character with multiple spell lists, these spells are added to all of them.)"
+        ]
+    },
+    {
+        "name": "Simic Scientist",
+        "description": "",
+        "skill_proficiencies": [
+            "Arcana",
+            "Medicine"
+        ],
+        "languages": [
+            "Two of your choice"
+        ],
+        "starting_items": [
+            "A Simic insignia",
+            "A set of commoner's clothes",
+            "A book of research notes",
+            "An ink pen",
+            "A bootle of squid ink",
+            "A flask of oil(made from blubber)",
+            "A vial of acid (derived from digestive juices)",
+            "A vial of fish scales",
+            "A vial of seaweed",
+            "A vial of jellyfish stingers",
+            "A glass bottle of unidentified slime",
+            "A belt pouch containing 10 gp (Azorius 1-zino coins)"
+        ]
+    },
+    {
+        "name": "Smuggler",
+        "description": "",
+        "skill_proficiencies": [
+            "Athletics",
+            "Deception"
+        ],
+        "tool_proficiencies": [
+            "Vehicles (water)"
+        ],
+        "starting_items": [
+            "A fancy leather vest or a pair of leather boots",
+            "A set of common clothes",
+            "A leather pouch with 15 gp"
+        ],
+        "features": [
+            "Down Low: You are acquainted with a network of smugglers who are willing to help you out of tight situations. While in a particular town, city, or other similarly sized community (DM's discretion), you and your companions can stay for free in safe houses. Safe houses provide a poor lifestyle. While staying at a safe house, you can choose to keep your presence (and that of your companions) a secret."
+        ]
+    },
+    {
+        "name": "Soldier",
+        "description": "You were a soldier in a standing army or mercenary company, and you have seen battle firsthand. You understand the chain of command and the importance of following orders, but you also know how to adapt when things don't go according to plan.",
+        "skill_proficiencies": [
+            "Athletics",
+            "Intimidation"
+        ],
+        "tool_proficiencies": [],
+        "starting_items": [
+            "An insignia of your rank",
+            "A trophy taken from a fallen enemy (such as a dagger, broken blade, or piece of armor)",
+            "A set of bone dice or deck of cards"
+        ],
+        "features": [
+            "Military Rank: You have a military rank from your career as a soldier. Soldiers loyal to your former military organization still recognize your authority and influence, and they defer to you if they are of a lower rank. You can invoke your rank to exert influence over other soldiers and requisition simple equipment or horses for temporary use."
+        ]
+    },
+    {
+        "name": "Spy",
+        "description": "You were a spy, either for a government or a criminal organization. You are adept at gathering and disseminating information, as well as keeping your true motives hidden.",
+        "skill_proficiencies": [
+            "Deception",
+            "Stealth"
+        ],
+        "tool_proficiencies": [
+            "Forgery kit"
+        ],
+        "starting_items": [
+            "A set of fine clothes",
+            "A disguise kit",
+            "A small knife"
+        ],
+        "features": [
+            "Undercover: You have experience operating undercover and maintaining a false identity. You have a network of contacts who can provide you with safe houses, false documents, and other resources to help you maintain your cover. You can also use your network to gather information or arrange meetings with key individuals."
+        ]
+    },
+    {
+        "name": "Trade Sheriff",
+        "description": "You were a law enforcement officer in a town or city, responsible for maintaining order and enforcing the law. You have a keen eye for spotting criminal activity, and you know how to work with others to bring wrongdoers to justice.",
+        "skill_proficiencies": [
+            "Insight",
+            "Persuasion"
+        ],
+        "tool_proficiencies": [
+            "Navigator's tools"
+        ],
+        "starting_items": [
+            "A set of common clothes",
+            "A badge or emblem of your former law enforcement agency",
+            "A leather pouch with 10 gp"
+        ],
+        "features": [
+            "Local Authority: You have experience working with local law enforcement agencies and know how to navigate the bureaucracy of city or town government. You can use your knowledge of local laws and customs to gain an advantage in negotiations or investigations."
+        ]
+    },
+    {
+        "name": "Urchin",
+        "description": "You grew up on the streets, fending for yourself and relying on your wits to survive. You know how to navigate urban environments and are adept at finding food, shelter, and other necessities in even the most desperate circumstances.",
+        "skill_proficiencies": [
+            "Sleight of Hand",
+            "Stealth"
+        ],
+        "tool_proficiencies": [
+            "Thieves' tools"
+        ],
+        "starting_items": [
+            "A small knife",
+            "A map of the city where you grew up",
+            "A pet mouse"
+        ],
+        "features": [
+            "City Secrets: You know the secret patterns and flow to cities and can find passages through the urban sprawl that others would miss. When you are not in combat, you (and companions you lead) can travel between any two locations in the city twice as fast as your speed would normally allow."
+        ]
+    },
+    {
+        "name": "Uthgardt Tribe Member",
+        "description": "You were born into one of the Uthgardt barbarian tribes that roam the north. You are a skilled hunter, warrior, and survivalist, with a deep connection to the spirits of the land.",
+        "skill_proficiencies": [
+            "Athletics",
+            "Survival"
+        ],
+        "tool_proficiencies": [],
+        "starting_items": [
+            "A hunting trap",
+            "A totem representing your tribe",
+            "A set of traveler's clothes"
+        ],
+        "features": [
+            "Tribal Knowledge: You have a deep understanding of the traditions, history, and beliefs of your tribe. You can use this knowledge to gain the trust and respect of other Uthgardt barbarians, and you can call upon the spirits of the land to aid you in times of need."
+        ]
+    },
+    {
+        "name": "Vizier",
+        "description": "You were a trusted advisor and counselor to a ruler or noble, providing them with sage advice on matters of state and diplomacy.",
+        "skill_proficiencies": [
+            "Insight",
+            "Persuasion"
+        ],
+        "tool_proficiencies": [
+            "Calligrapher's supplies"
+        ],
+        "starting_items": [
+            "A set of fine clothes",
+            "A small library of books on history, politics, and diplomacy",
+            "A signet ring or other symbol of your former position"
+        ],
+        "features": [
+            "Courtly Graces: You are well-versed in the social customs and etiquette of the court, and you know how to navigate the complex web of alliances and rivalries that exist among the nobility. You can use your knowledge to gain access to powerful individuals and to negotiate favorable terms in diplomatic missions."
+        ]
+    },
+    {
+        "name": "Volstrucker Agent",
+        "description": "You were a member of the Volstrucker, a secretive organization that serves the Cerberus Assembly in pursuit of their goals.",
+        "skill_proficiencies": [
+            "Deception",
+            "Stealth"
+        ],
+        "tool_proficiencies": [
+            "Poisoner's kit"
+        ],
+        "starting_items": [
+            "A set of dark clothing with the Volstrucker emblem",
+            "A small vial of poison",
+            "A concealed dagger"
+        ],
+        "features": [
+            "Assassin's Training: You have received extensive training in the arts of assassination, infiltration, and subterfuge. You are skilled at moving silently, picking locks, and disabling traps, and you know how to blend into the shadows to avoid detection."
+        ]
+    },
+    {
+        "name": "Waterdhavian Noble",
+        "description": "You were born into one of the noble families of Waterdeep, and you have been raised to excel in the arts of politics, diplomacy, and intrigue.",
+        "skill_proficiencies": [
+            "History",
+            "Persuasion"
+        ],
+        "tool_proficiencies": [
+            "Gaming set"
+        ],
+        "starting_items": [
+            "A set of fine clothes",
+            "A signet ring or other symbol of your noble house",
+            "A purse containing 25 gp"
+        ],
+        "features": [
+            "Kept in Style: While you are in Waterdeep or elsewhere in the North, your house sees to your everyday needs. Your name and signet are sufficient to cover most of your expenses; the inns, taverns, and festhalls you frequent are glad to record your debt and send an accounting to your family's estate in Waterdeep to settle what you owe.  This advantage enables you to live a comfortable lifestyle without having to pay 2 gp a day for it, or reduces the cost of a wealthy or aristocratic lifestyle by that amount. You may not maintain a less affluent lifestyle and use the difference as income—the benefit is a line of credit, not an actual monetary reward."
+        ]
+    },
+    {
+        "name": "Wilderspace",
+        "description": "You are a denizen of the Wilds, and you are intimately familiar with the natural world around you. You have learned to live off the land, and you are always alert to the dangers that lurk in the wilderness.",
+        "skill_proficiencies": [
+            "Survival",
+            "Nature"
+        ],
+        "tool_proficiencies": [
+            "Herbalism kit"
+        ],
+        "starting_items": [
+            "A handcrafted longbow",
+            "A quiver of 20 arrows",
+            "A hunting trap",
+            "A set of traveler's clothes"
+        ],
+        "features": [
+            "Wilderness Lore: You have a deep knowledge of the flora and fauna of the Wilds, and you know how to track animals, identify plants, and find sources of fresh water. You also know how to survive in extreme conditions, such as during a blizzard or a heat wave."
+        ]
+    },
+    {
+        "name": "Witherbloom Student",
+        "description": "You are a student at the Witherbloom college of Strixhaven, studying the dark arts of life and death. You have learned how to manipulate the forces of nature to create powerful potions and spells.",
+        "skill_proficiencies": [
+            "Arcana",
+            "Nature"
+        ],
+        "tool_proficiencies": [
+            "Herbalism kit",
+            "Alchemist's supplies"
+        ],
+        "starting_items": [
+            "A spellbook containing 3 cantrips and 2 1st-level spells",
+            "A potion of healing",
+            "A set of black robes embroidered with the Witherbloom crest"
+        ],
+        "features": [
+            "Herbalism Expertise: You are skilled at identifying and gathering rare and exotic herbs and fungi that can be used to create powerful potions and elixirs. You also know how to brew and distill these ingredients to create potent concoctions that can heal or harm living creatures."
+        ]
+    }
+]
