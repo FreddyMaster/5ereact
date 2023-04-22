@@ -1,0 +1,38 @@
+[
+    {
+        "name": "Lawful Good",
+        "description": "A lawful good character typically acts with compassion, and always with honor and a sense of duty. Such characters include righteous knights, paladins, and most dwarves."
+    },
+    {
+        "name": "Neutral Good",
+        "description": "A neutral good character does the best that a good person can do. Such characters are devoted to helping others. Many neutral good characters also believe that a balance between law and chaos is necessary in the world."
+    },
+    {
+        "name": "Chaotic Good",
+        "description": "A chaotic good character acts as his conscience directs him with little regard for what others expect of him. Such characters are rebels who believe in doing the right thing, even if it means breaking the rules."
+    },
+    {
+        "name": "Lawful Neutral",
+        "description": "A lawful neutral character typically believes strongly in lawful concepts such as honor, order, rules, and tradition, but often follows a personal code in addition to, or even in preference to, laws and tradition."
+    },
+    {
+        "name": "True Neutral",
+        "description": "A true neutral character does what seems to be a good idea. He doesn't feel strongly one way or the other when it comes to good vs. evil or law vs. chaos. Most true neutral characters exhibit a lack of conviction or bias rather than a commitment to neutrality."
+    },
+    {
+        "name": "Chaotic Neutral",
+        "description": "A chaotic neutral character follows his whims. He is an individualist first and last. Such characters might be unpredictable, but their behavior is not totally random."
+    },
+    {
+        "name": "Lawful Evil",
+        "description": "A lawful evil character sees a well-ordered system as being easier to exploit and shows a combination of desirable and undesirable traits. He respects authority figures and traditions, but does not necessarily follow them."
+    },
+    {
+        "name": "Neutral Evil",
+        "description": "A neutral evil character is typically selfish and has no qualms about turning on allies-of-the-moment, and usually makes allies primarily to further his own goals. Such a character is ruthless in his pursuit of his goals."
+    },
+    {
+        "name": "Chaotic Evil",
+        "description": "A chaotic evil character does whatever his greed, hatred, and lust for destruction drive him to do. He is hot-tempered, vicious, arbitrarily violent, and unpredictable."
+    }
+]
