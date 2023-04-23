@@ -8,8 +8,8 @@
 			"Draconic"
 		],
 		"abilityBonuses": {
-			"Strength": 2,
-			"Charisma": 1
+			"STR": 2,
+			"CHA": 1
 		},
 		"traits": [
 			{
@@ -216,7 +216,7 @@
 			"Dwarvish"
 		],
 		"abilityBonuses": {
-			"Constitution": 2
+			"CON": 2
 		},
 		"traits": [
 			{
@@ -229,14 +229,14 @@
 			},
 			{
 				"name": "Stonecunning",
-				"description": "You have advantage on Intelligence (History) checks related to the origin of stonework."
+				"description": "You have advantage on INT (History) checks related to the origin of stonework."
 			}
 		],
 		"subraces": [
 			{
 				"name": "Hill Dwarf",
 				"abilityBonuses": {
-					"Wisdom": 1
+					"WIS": 1
 				},
 				"traits": [
 					{
@@ -248,7 +248,7 @@
 			{
 				"name": "Mountain Dwarf",
 				"abilityBonuses": {
-					"Strength": 2
+					"STR": 2
 				},
 				"traits": [
 					{
@@ -260,7 +260,7 @@
 			{
 				"name": "Duergar",
 				"abilityBonuses": {
-					"Strength": 1
+					"STR": 1
 				},
 				"traits": [
 					{
@@ -284,7 +284,7 @@
 			{
 				"name": "Mark of Warding Dwarf",
 				"abilityBonuses": {
-					"Intelligence": 1
+					"INT": 1
 				},
 				"traits": [
 					{
@@ -297,7 +297,7 @@
 					},
 					{
 						"name": "Warder's Intuition",
-						"description": "When you make an Intelligence (Investigation) check or an ability check using thieves' tools, you can roll a d4 and add the number rolled to the ability check."
+						"description": "When you make an INT (Investigation) check or an ability check using thieves' tools, you can roll a d4 and add the number rolled to the ability check."
 					}
 				]
 			}
@@ -312,7 +312,7 @@
 			"Elvish"
 		],
 		"abilityBonuses": {
-			"Dexterity": 2
+			"DEX": 2
 		},
 		"traits": [
 			{
@@ -353,7 +353,7 @@
 			{
 				"name": "Drow",
 				"abilityBonuses": {
-					"Charisma": 1
+					"CHA": 1
 				},
 				"traits": [
 					{
@@ -362,11 +362,11 @@
 					},
 					{
 						"name": "Sunlight Sensitivity",
-						"description": "You have disadvantage on attack rolls and on Wisdom (Perception) checks that rely on sight when you, the target of your attack, or whatever you are trying to perceive is in direct sunlight."
+						"description": "You have disadvantage on attack rolls and on WIS (Perception) checks that rely on sight when you, the target of your attack, or whatever you are trying to perceive is in direct sunlight."
 					},
 					{
 						"name": "Drow Magic",
-						"description": "You know the dancing lights cantrip. When you reach 3rd level, you can cast the faerie fire spell once with this trait; you regain the ability to cast it when you finish a long rest. When you reach 5th level, you can also cast the darkness spell once per day with this trait; you regain the ability to cast it when you finish a long rest. Charisma is your spellcasting ability for these spells."
+						"description": "You know the dancing lights cantrip. When you reach 3rd level, you can cast the faerie fire spell once with this trait; you regain the ability to cast it when you finish a long rest. When you reach 5th level, you can also cast the darkness spell once per day with this trait; you regain the ability to cast it when you finish a long rest. CHA is your spellcasting ability for these spells."
 					},
 					{
 						"name": "Drow Weapon Training",
@@ -375,7 +375,7 @@
 					{
 						"name": "High Elf",
 						"abilityBonuses": {
-							"Intelligence": 1
+							"INT": 1
 						},
 						"traits": [
 							{
@@ -384,7 +384,7 @@
 							},
 							{
 								"name": "Cantrip",
-								"description": "You know one cantrip of your choice from the wizard spell list. Intelligence is your spellcasting ability for it."
+								"description": "You know one cantrip of your choice from the wizard spell list. INT is your spellcasting ability for it."
 							},
 							{
 								"name": "Extra Language",
@@ -395,7 +395,7 @@
 					{
 						"name": "Wood Elf",
 						"abilityBonuses": {
-							"Wisdom": 1
+							"WIS": 1
 						},
 						"traits": [
 							{
@@ -415,7 +415,7 @@
 					{
 						"name": "Eladrin",
 						"abilityBonuses": {
-							"Intelligence": 1
+							"INT": 1
 						},
 						"traits": [
 							{
@@ -431,16 +431,16 @@
 					{
 						"name": "Mark of Shadow",
 						"abilityBonuses": {
-							"Charisma": 1
+							"CHA": 1
 						},
 						"traits": [
 							{
 								"name": "Cunning Intutition",
-								"description": "When you make a Charisma (Performance) or Dexterity (Stealth) check, you can roll a d4 and add the number rolled to the ability check."
+								"description": "When you make a CHA (Performance) or DEX (Stealth) check, you can roll a d4 and add the number rolled to the ability check."
 							},
 							{
 								"name": "Shape Shadows",
-								"description": "You know the minor illusion cantrip. Starting at 3rd level, you can cast the invisibility spell once with this trait, and you regain the ability to cast it when you finish a long rest. Charisma is your spellcasting ability for these spells."
+								"description": "You know the minor illusion cantrip. Starting at 3rd level, you can cast the invisibility spell once with this trait, and you regain the ability to cast it when you finish a long rest. CHA is your spellcasting ability for these spells."
 							},
 							{
 								"name": "Spells of the Mark",
@@ -451,23 +451,23 @@
 					{
 						"name": "Pallid",
 						"abilityBonuses": {
-							"Wisdom": 1
+							"WIS": 1
 						},
 						"traits": [
 							{
 								"name": "Incisive Sense",
-								"description": "You have advantage on Intelligence (Investigation) and Wisdom (Insight) checks."
+								"description": "You have advantage on INT (Investigation) and WIS (Insight) checks."
 							},
 							{
 								"name": "Blessing of the Moon Weaver",
-								"description": "You know the light cantrip. When you reach 3rd level, you can cast the sleep spell once with this trait and regain the ability to do so when you finish a long rest. When you reach 5th level, you can cast the invisibility spell (targeting yourself only) once with this trait and regain the ability to do so when you finish a long rest. Casting these spells with this trait doesn't require material components. Wisdom is your spellcasting ability for these spells."
+								"description": "You know the light cantrip. When you reach 3rd level, you can cast the sleep spell once with this trait and regain the ability to do so when you finish a long rest. When you reach 5th level, you can cast the invisibility spell (targeting yourself only) once with this trait and regain the ability to do so when you finish a long rest. Casting these spells with this trait doesn't require material components. WIS is your spellcasting ability for these spells."
 							}
 						]
 					},
 					{
 						"name": "Sea",
 						"abilityBonuses": {
-							"Constitution": 1
+							"CON": 1
 						},
 						"traits": [
 							{
@@ -487,7 +487,7 @@
 					{
 						"name": "Shadar-kai",
 						"abilityBonuses": {
-							"Constitution": 1
+							"CON": 1
 						},
 						"traits": [
 							{

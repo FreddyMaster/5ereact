@@ -4,10 +4,35 @@ import backgrounds from './data/backgrounds.json';
 import classes from './data/classes.json';
 import races from './data/races.json'
 import alignments from './data/alignments.json';
-
+import { Dropdown } from 'primereact/dropdown';
 
 function App() {
   const [activeTab, setActiveTab] = useState('Race');
+  const [selectedRace, setSelectedRace] = useState(null);
+  const [selectedAlignment, setSelectedAlignment] = useState(null);
+  const [selectedClass, setSelectedClass] = useState(null);
+  const [selectedBackground, setSelectedBackground] = useState(null);
+  const [selectedLevel, setSelectedLevel] = useState(1);
+
+  const handleRaceClick = (race) => {
+    setSelectedRace(selectedRace === race ? null : race);
+  };
+
+  const handleBackgroundChange = (event) => {
+    setSelectedBackground(event.value);
+  };
+
+  const handleClassChange = (event) => {
+    setSelectedClass(event.value);
+  };
+
+  const handleAlignmentChange = (event) => {
+    setSelectedBackground(event.value);
+  };
+
+  const handleLevelChange = (event) => {
+    setSelectedLevel(event.value);
+  };
 
   function openTab(event, tabName) {
     const tabContents = document.getElementsByClassName('tabcontent');
@@ -48,6 +73,15 @@ function App() {
     );
   }
 
+  const numberOptions = [];
+  for (let i = 1; i <= 20; i++) {
+    numberOptions.push(
+      <option key={i} value={i}>
+        {i}
+      </option>
+    );
+  }
+
   return (
     <div className="App">
       <h1>D&amp;D 5e Character Creator</h1>
@@ -85,70 +119,65 @@ function App() {
       {/* Tab contents */}
       <div id="Race" className="tabcontent">
         <label htmlFor="name">Name:</label>
-        <input type="text" id="name" name="name" /><br />
-        <select id="race" name="race">
-          {/* Race tab content */}
-          {races.map(race => (
-            <option value={race.name} key={race.id}>
-              {race.name}
-            </option>
+        <input type="text" id="name" name="name" />
+        <br />
+        <label htmlFor="race">Race:</label>
+        <div className="race-container">
+          {races.map((race) => (
+            <div key={race.id}>
+              <button className="race-button" onClick={() => handleRaceClick(race)}>
+                {race.name}
+              </button>
+              <div>
+                {selectedRace === race && (
+                  <p><em>speed: +{race.speed}, {Object.entries(race.abilityBonuses).map(([key, value]) => `${key}: +${value}`).join(", ")}</em> </p>
+                )}
+              </div>
+            </div>
           ))}
-        </select>
+        </div>
       </div>
       <div id="Class" className="tabcontent">
         <label htmlFor="class">Class:</label>
         {/* Class tab content */}
-        <select id="class">
-          {classes.map(Class => (
-            <option value={Class.name} key={Class.id}>
-              {Class.name}
-            </option>
-          ))}
-        </select>
+        <Dropdown id="class-select" options={classes} optionLabel="name" value={selectedClass} onChange={handleClassChange} placeholder="Select a class" /> <br />
+        <label htmlFor="level">Level:</label>
+        <Dropdown id="level" value={selectedLevel} options={numberOptions} onChange={handleLevelChange} placeholder="Select a level" />
+        <p>Level: {selectedLevel}</p>
       </div>
       <div id="Ability" className="tabcontent">
         {/* Ability Scores / Feats tab content */}
         <label htmlFor="strength">Strength:</label>
         <input type="number" id="strength" name="Strength" min="1" value={abilityScores[0].score} onChange={updateModifier} />
-        <input type="text" id="strength-modifier" name="strength-modifier" value={abilityScores[0].modifier} readOnly /><br />
+        <input type="modifier" id="strength-modifier" name="strength-modifier" value={abilityScores[0].modifier} readOnly /><br />
 
         <label htmlFor="dexterity">Dexterity:</label>
         <input type="number" id="dexterity" name="Dexterity" min="1" value={abilityScores[1].score} onChange={updateModifier} />
-        <input type="text" id="dexterity-modifier" name="dexterity-modifier" value={abilityScores[1].modifier} readOnly /><br />
+        <input type="modifier" id="dexterity-modifier" name="dexterity-modifier" value={abilityScores[1].modifier} readOnly /><br />
 
         <label htmlFor="constitution">Constitution:</label>
         <input type="number" id="constitution" name="Constitution" min="1" value={abilityScores[2].score} onChange={updateModifier} />
-        <input type="text" id="constitution-modifier" name="constitution-modifier" value={abilityScores[2].modifier} readOnly /><br />
+        <input type="modifier" id="constitution-modifier" name="constitution-modifier" value={abilityScores[2].modifier} readOnly /><br />
 
         <label htmlFor="intelligence">Intelligence:</label>
         <input type="number" id="intelligence" name="Intelligence" min="1" value={abilityScores[3].score} onChange={updateModifier} />
-        <input type="text" id="intelligence-modifier" name="intelligence-modifier" value={abilityScores[3].modifier} readOnly /><br />
+        <input type="modifier" id="intelligence-modifier" name="intelligence-modifier" value={abilityScores[3].modifier} readOnly /><br />
 
         <label htmlFor="wisdom">Wisdom:</label>
         <input type="number" id="wisdom" name="Wisdom" min="1" value={abilityScores[4].score} onChange={updateModifier} />
-        <input type="text" id="wisdom-modifier" name="wisdom-modifier" value={abilityScores[4].modifier} readOnly /><br />
+        <input type="modifier" id="wisdom-modifier" name="wisdom-modifier" value={abilityScores[4].modifier} readOnly /><br />
 
         <label htmlFor="charisma">Charisma:</label>
         <input type="number" id="charisma" name="Charisma" min="1" value={abilityScores[5].score} onChange={updateModifier} />
-        <input type="text" id="charisma-modifier" name="charisma-modifier" value={abilityScores[5].modifier} readOnly /><br />
+        <input type="modifier" id="charisma-modifier" name="charisma-modifier" value={abilityScores[5].modifier} readOnly /><br />
       </div>
       <div id="Background" className="tabcontent">
-        <label htmlFor="background">Background:</label>
+        <label htmlFor="alignment">Alignment:</label>
         {/* Background tab content */}
-        <select id="alignment-select">
-          {alignments.map(alignment => (
-            <option value={alignment.name} key={alignment.id}>
-              {alignment.name}
-            </option>
-          ))}
-        </select>
-        <select id="background-select">
-          {backgrounds.map(background => (
-            <option value={background.name} key={background.id}>
-              {background.name}
-            </option>
-          ))}
-        </select>
+        <Dropdown id="alignment-select" options={alignments} optionLabel="name" value={selectedBackground} onChange={handleAlignmentChange} placeholder="Select an alignment" />
+        <br />
+        <label htmlFor="background">Background:</label>
+        <Dropdown id="background-select" options={backgrounds} optionLabel="name" value={selectedBackground} onChange={handleBackgroundChange} placeholder="Select a background" />
       </div>
     </div>
   );
