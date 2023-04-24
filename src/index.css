@@ -93,32 +93,17 @@ h1 {
   border-top: none;
 }
 
-label {
+label:not(.floatingName) {
   display: inline-block;
   width: 100px;
   font-weight: bold;
-  margin-bottom: 10px;
-}
-
-input[type="text"] {
-  width: 200px;
-  padding: 5px;
-  margin-bottom: 10px;
-  border-radius: 5px;
-  border: none;
-  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-input[type="number"] {
-  width: 40px;
-  padding: 5px;
-  margin-bottom: 10px;
-  border-radius: 5px;
-  border: none;
-  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+  margin: 10px;
+  align-items: left;
 }
 
 input[type="modifier"] {
+  font-weight: bold;
+  font-size: 1em;
   padding: 5px;
   margin-bottom: 10px;
   border: none;
@@ -131,30 +116,26 @@ input[type="modifier"]:focus {
   outline: none;
 }
 
-input[id="xp"] {
-  width: 100px;
-  padding: 5px;
-  margin-bottom: 10px;
-  border: none;
-  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-[id="Ability"] {
-  padding: 5px;
+[id="class-select"],
+[id="alignment-select"],
+[id="background-select"],
+[id="level"] {
   margin: 10px;
+  width: 14em;
+}
+
+.accordion-button {
+  position: relative;
+  color: #fff;
   border: none;
-  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  text-align: left;
+  cursor: pointer;
+  width: 20em;
 }
 
-label {
-  display: inline-block;
-  width: 120px;
-  /* adjust as necessary */
-  text-align: left;
-}
-
-label[for="race"] {
-  text-align: left;
+.accordion-button:last-child {
+  margin-bottom: 1em
 }
 
 /* Style the race buttons and descriptions */
