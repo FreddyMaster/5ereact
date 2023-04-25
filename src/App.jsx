@@ -14,7 +14,7 @@ function App() {
   const [activeTab, setActiveTab] = useState('Race');
   const [selectedRace, setSelectedRace] = useState(null);
   const [selectedAlignment, setSelectedAlignment] = useState(null);
-  const [selectedClass, setSelectedClass] = useState(null);
+  const [selectedClass, setSelectedClass] = useState({ name: '', hit_die: 0, primary_ability: '', saving_throws: [], armor_proficiencies: [], weapon_proficiencies: [], tool_proficiencies: [], spellcasting_ability: '', subclasses: [] });
   const [selectedBackground, setSelectedBackground] = useState(null);
   const [selectedLevel, setSelectedLevel] = useState(1);
   const [name, setName] = useState('');
@@ -89,13 +89,13 @@ function App() {
 
   return (
     <div className="App">
-      <h1>D&amp;D 5e Character Creator</h1>
 
       {/* Tab links */}
       <NavBar activeTab={activeTab} event={event} openTab={openTab} />
 
       {/* Tab contents */}
       <div id="Race" className="tabcontent">
+        <h1>Race</h1>
         <div style={{ display: 'flex', justifyContent: 'center' }}>
           <span className="p-float-label">
             <InputText id="name" value={name} onChange={(e) => setName(e.target.value)} />
@@ -103,7 +103,8 @@ function App() {
           </span>
         </div>
         <br />
-        <label htmlFor="race">Race:</label>
+        <label htmlFor="race">Race</label> <br />
+        <em>Select 1</em>
         <Accordion>
           {races.map((race) => (
             <AccordionTab key={race.id} header={race.name} className="accordion-button">
@@ -113,12 +114,24 @@ function App() {
         </Accordion>
       </div>
       <div id="Class" className="tabcontent">
+        <h1>Class/Level</h1>
+        <label htmlFor="class">Class/Level</label> <br />
+        <em>Select at least 1</em> <br />
         {/* Class tab content */}
         <Dropdown id="class-select" options={classes} optionLabel="name" value={selectedClass} onChange={handleClassChange} placeholder="Select a class" /> <br />
         <Dropdown id="level" value={selectedLevel} options={levelOptions.map((option) => ({ label: option.props.children, value: option.props.value }))} onChange={handleLevelChange} placeholder="Select a level" />
-        <p>Level: {selectedLevel}</p>
+        <p className="left-align">Hit Points</p>
+        <em>
+          <p>
+            {selectedLevel - 1 !== 0 ? `Select ${selectedLevel - 1}` : ''}
+            {selectedLevel - 1 !== 0 && <br />}
+          </p>
+        </em>
+        <p className="left-align">{selectedClass?.name} {selectedClass.hit_die !== 0 ? `(d${selectedClass.hit_die})` : ''}</p>
       </div>
       <div id="Ability" className="tabcontent">
+        <h1>Ability Scores</h1>
+
         {/* Ability Scores / Feats tab content */}
         <label htmlFor="strength">Strength:</label>
         <InputNumber id="strength" name="Strength" min={1} value={abilityScores[0].score} onValueChange={updateModifier} />
@@ -146,6 +159,8 @@ function App() {
       </div>
 
       <div id="Background" className="tabcontent">
+        <h1>Background / Alignment</h1>
+
         {/* Background tab content */}
         <Dropdown id="alignment-select" options={alignments} optionLabel="name" value={selectedAlignment} onChange={handleAlignmentChange} placeholder="Select an alignment" />
         <br />

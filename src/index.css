@@ -43,16 +43,19 @@ body {
   background-color: #242424;
 }
 
-h1 {
-  text-align: center;
-}
-
 .tab {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   background-color: transparent;
+}
+
+.tab h1 {
+  margin: 0;
+  position: absolute;
+  left: 0;
+  top: 0;
 }
 
 .tab button {
@@ -93,12 +96,20 @@ h1 {
   border-top: none;
 }
 
+p {
+  text-align: left;
+}
+
+.left-align {
+  text-align: left;
+  font-weight: bold;
+}
+
 label:not(.floatingName) {
-  display: inline-block;
   width: 100px;
   font-weight: bold;
   margin: 10px;
-  align-items: left;
+  text-align: left;
 }
 
 input[type="modifier"] {
@@ -122,6 +133,7 @@ input[type="modifier"]:focus {
 [id="level"] {
   margin: 10px;
   width: 14em;
+  text-align: left;
 }
 
 .accordion-button {
@@ -138,54 +150,3 @@ input[type="modifier"]:focus {
   margin-bottom: 1em
 }
 
-/* Style the race buttons and descriptions */
-.race-button {
-  width: 300px;
-  height: 50px;
-  margin: 10px;
-  border-color: #3ca9cd;
-  border-radius: 5px;
-  background-color: transparent;
-  color: #fff;
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  font-weight: 400;
-  font-size: 16px;
-  cursor: pointer;
-  text-align: start;
-}
-
-.race-button:hover {
-  background-color: #191919;
-}
-
-.race-description {
-  display: none;
-  padding: 10px;
-  margin: 10px 10px 10px 0;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  background-color: #fff;
-  color: #222;
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  font-weight: 400;
-  font-size: 14px;
-}
-
-.race-button.active+.race-description {
-  display: block;
-}
-
-.race-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-  align-items: flex-start;
-}
-
-.race-column {
-  width: calc(50% - 20px);
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  margin: 0 10px;
-}
