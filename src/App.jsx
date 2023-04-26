@@ -1,5 +1,5 @@
 import { NavBar } from './components/navBar/navBar';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import './App.css';
 import backgrounds from './components/data/backgrounds.json';
 import classes from './components/data/classes.json';
@@ -9,6 +9,9 @@ import { Dropdown } from 'primereact/dropdown';
 import { InputNumber } from 'primereact/inputnumber';
 import { InputText } from 'primereact/inputtext';
 import { Accordion, AccordionTab } from 'primereact/accordion';
+import { DataTable } from 'primereact/datatable';
+import { Column } from 'primereact/column';
+
 
 function App() {
   const [activeTab, setActiveTab] = useState('Race');
@@ -18,6 +21,7 @@ function App() {
   const [selectedBackground, setSelectedBackground] = useState(null);
   const [selectedLevel, setSelectedLevel] = useState(1);
   const [name, setName] = useState('');
+  const levelArray = Array.from({ length: selectedLevel }, (_, i) => i + 1);
 
   const handleRaceClick = (race) => {
     setSelectedRace(selectedRace === race ? null : race);
@@ -87,6 +91,64 @@ function App() {
     );
   }
 
+  const baseTemplate = (rowData, level) => {
+    const hitdie = selectedClass.hit_die;
+    const options = Array.from({ length: hitdie }, (_, i) => i + 1);
+
+    if (level === 1) {
+      return hitdie;
+    } else {
+      return (
+        <Dropdown
+          options={options}
+          value={rowData.Base}
+          onChange={(e) =>
+            updateRowData(rowData, { Base: e.value, Total: e.value + rowData.Con + selectedClass.hit_die - rowData.Base })
+          }
+        />
+      );
+    }
+  };
+
+  const [data, setData] = useState(() => {
+    const initialData = levelArray.map((level, index) => ({
+      Level: level,
+      Base: index === 0 ? selectedClass.hit_die : 1,
+      Con: parseInt(abilityScores[2].modifier.replace(/[^0-9]/g, ''), 10),
+      Total: selectedClass.hit_die + parseInt(abilityScores[2].modifier.replace(/[^0-9]/g, ''), 10),
+    }));
+    return initialData;
+  });
+
+  const updateRowData = (rowData, newData) => {
+    setData(prevData => {
+      const index = prevData.findIndex((d) => d.Level === rowData.Level);
+      const updatedData = [...prevData];
+      updatedData[index] = { ...rowData, ...newData, Total: newData.Base + rowData.Con };
+      return updatedData;
+    });
+  };
+  
+
+  useEffect(() => {
+    if (data.length < levelArray.length) {
+      const newRows = [];
+      for (let i = data.length; i < levelArray.length; i++) {
+        const newLevel = levelArray[i];
+        const newDataRow = {
+          Level: newLevel,
+          Base: 1,
+          Con: parseInt(abilityScores[2].modifier.replace(/[^0-9]/g, ''), 10),
+          Total: 1 + parseInt(abilityScores[2].modifier.replace(/[^0-9]/g, ''), 10),
+        };
+        newRows.push(newDataRow);
+      }
+      setData(prevData => [...prevData, ...newRows]);
+    } else if (data.length > levelArray.length) {
+      setData(prevData => prevData.slice(0, levelArray.length));
+    }
+  }, [data, levelArray, abilityScores]);
+
   return (
     <div className="App">
 
@@ -96,15 +158,15 @@ function App() {
       {/* Tab contents */}
       <div id="Race" className="tabcontent">
         <h1>Race</h1>
-        <div style={{ display: 'flex', justifyContent: 'center' }}>
+        <div id="name">
           <span className="p-float-label">
             <InputText id="name" value={name} onChange={(e) => setName(e.target.value)} />
             <label htmlFor="name" className="floatingName">Name</label>
           </span>
         </div>
         <br />
-        <label htmlFor="race">Race</label> <br />
-        <em>Select 1</em>
+        <label id="race">Race</label>
+        <em id="select1">Select 1</em>
         <Accordion>
           {races.map((race) => (
             <AccordionTab key={race.id} header={race.name} className="accordion-button">
@@ -115,19 +177,23 @@ function App() {
       </div>
       <div id="Class" className="tabcontent">
         <h1>Class/Level</h1>
-        <label htmlFor="class">Class/Level</label> <br />
-        <em>Select at least 1</em> <br />
+        <label htmlFor="class">Class/Level</label>
+        <em>Select at least 1</em>
         {/* Class tab content */}
-        <Dropdown id="class-select" options={classes} optionLabel="name" value={selectedClass} onChange={handleClassChange} placeholder="Select a class" /> <br />
+        <Dropdown id="class-select" options={classes} optionLabel="name" value={selectedClass} onChange={handleClassChange} placeholder="Select a class" />
         <Dropdown id="level" value={selectedLevel} options={levelOptions.map((option) => ({ label: option.props.children, value: option.props.value }))} onChange={handleLevelChange} placeholder="Select a level" />
-        <p className="left-align">Hit Points</p>
+        <p id="hitpoints">Hit Points</p>
         <em>
-          <p>
-            {selectedLevel - 1 !== 0 ? `Select ${selectedLevel - 1}` : ''}
-            {selectedLevel - 1 !== 0 && <br />}
-          </p>
+          <p id="select1">{selectedLevel - 1 !== 0 ? `Select ${selectedLevel - 1}` : ''}</p>
         </em>
-        <p className="left-align">{selectedClass?.name} {selectedClass.hit_die !== 0 ? `(d${selectedClass.hit_die})` : ''}</p>
+        <p id="class-selected">{selectedClass?.name} {selectedClass.hit_die !== 0 ? `(d${selectedClass.hit_die})` : ''}</p>
+        <p id="total-text">Total:</p>
+        <DataTable value={data} stripedRows tableStyle={{ minWidth: '50rem' }}>
+          <Column field="Level" header="Level" />
+          <Column field="Base" header="Base" body={(rowData) => baseTemplate(rowData, rowData.Level)} />
+          <Column field="Con" header="Con" />
+          <Column field="Total" header="Total" />
+        </DataTable>
       </div>
       <div id="Ability" className="tabcontent">
         <h1>Ability Scores</h1>
@@ -163,7 +229,7 @@ function App() {
 
         {/* Background tab content */}
         <Dropdown id="alignment-select" options={alignments} optionLabel="name" value={selectedAlignment} onChange={handleAlignmentChange} placeholder="Select an alignment" />
-        <br />
+
         <Dropdown id="background-select" options={backgrounds} optionLabel="name" value={selectedBackground} onChange={handleBackgroundChange} placeholder="Select a background" />
       </div>
     </div>
