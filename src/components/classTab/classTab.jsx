@@ -49,29 +49,31 @@ export function ClassTab(props) {
       );
     }
   };
-
-
+  
   const [data, setData] = useState(() => {
+    const conModifier = parseInt(abilityScores[2].modifier.replace(/[^0-9]/g, ''), 10);
     const initialData = levelArray.map((level, index) => ({
       Level: level,
       Base: index === 0 ? selectedClass.hit_die : 1,
-      Con: parseInt(abilityScores[2].modifier.replace(/[^0-9]/g, ''), 10),
-      Total: selectedClass.hit_die + parseInt(abilityScores[2].modifier.replace(/[^0-9]/g, ''), 10),
+      Con: conModifier,
+      Total: index === 0 ? selectedClass.hit_die + conModifier : 1 + conModifier,
     }));
     return initialData;
   });
 
   const updateRowData = (rowData, newData) => {
-    setData((prevData) => {
-      const index = prevData.findIndex((row) => row.Level === rowData.Level);
+    setData(prevData => {
+      const index = prevData.findIndex(row => row.Level === rowData.Level);
       if (index !== -1) {
-        return prevData.map((row, i) => (i === index ? { ...row, ...newData } : row));
+        const newData = prevData[index];
+        return [
+          ...prevData.slice(0, index),
+          { ...newData, ...rowData },
+          ...prevData.slice(index + 1)
+        ];
       }
-      return prevData;
     });
   };
-
-
 
   useEffect(() => {
     if (data.length < levelArray.length) {
@@ -92,7 +94,28 @@ export function ClassTab(props) {
     }
   }, [data, levelArray, abilityScores]);
 
+  useEffect(() => {
+    setData(prevData => prevData.map(rowData => ({
+      ...rowData,
+      Con: parseInt(abilityScores[2].modifier.replace(/[^0-9]/g, ''), 10)
+    })));
+  }, [abilityScores]);
 
+  useEffect(() => {
+    const conModifier = parseInt(abilityScores[2].modifier.replace(/[^0-9]/g, ''), 10);
+
+    function setInitialData() {
+      const initialData = Array.from({ length: selectedLevel }, (_, i) => ({
+        Level: i + 1,
+        Base: i === 0 ? selectedClass.hit_die : 1,
+        Con: conModifier,
+        Total: i === 0 ? selectedClass.hit_die + conModifier : 1 + conModifier
+      }));
+      setData(initialData);
+    }
+
+    setInitialData();
+  }, [selectedClass, selectedLevel, abilityScores]);
 
   return (
     <div id="Class" className="tabcontent">

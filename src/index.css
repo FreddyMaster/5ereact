@@ -177,6 +177,13 @@ em {
   text-align: center;
 }
 
+h3 {
+  display: flex;
+  margin-left: .5em;
+  margin-bottom: 0px;
+  text-align: center;
+}
+
 #name {
   display: flex;
 }

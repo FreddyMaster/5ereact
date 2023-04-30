@@ -19,9 +19,12 @@ export function BackgroundTab (props)  {
     <div id="Background" className="tabcontent">
       <h1>Background / Alignment</h1>
 
+      <h3>Alignment</h3>
+      <em>Select 1</em>
       {/* Alignment dropdown */}
       <Dropdown id="alignment-select" options={alignments} optionLabel="name" value={selectedAlignment} onChange={handleAlignmentChange} placeholder="Select an alignment" />
-
+      <h3>Background</h3>
+      <em>Select 1</em>
       {/* Background dropdown */}
       <Dropdown id="background-select" options={backgrounds} optionLabel="name" value={selectedBackground} onChange={handleBackgroundChange} placeholder="Select a background" />
     </div>
