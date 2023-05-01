@@ -31,6 +31,10 @@ function App() {
     // handle form submission
   }
 
+  // Call openTab with 'Race' argument when the component mounts
+  useEffect(() => {
+    openTab(null, 'Race');
+  }, []);
 
   return (
     <div className="App">

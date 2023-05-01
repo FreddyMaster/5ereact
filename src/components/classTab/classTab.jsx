@@ -49,7 +49,7 @@ export function ClassTab(props) {
       );
     }
   };
-  
+
   const [data, setData] = useState(() => {
     const conModifier = parseInt(abilityScores[2].modifier.replace(/[^0-9]/g, ''), 10);
     const initialData = levelArray.map((level, index) => ({
@@ -120,12 +120,13 @@ export function ClassTab(props) {
   return (
     <div id="Class" className="tabcontent">
       <h1>Class/Level</h1>
-      <label htmlFor="class">Class/Level</label>
+      <h3 htmlFor="class">Class/Level</h3>
       <em>Select at least 1</em>
       {/* Class tab content */}
       <Dropdown id="class-select" options={classes} optionLabel="name" value={selectedClass} onChange={handleClassChange} placeholder="Select a class" />
       <Dropdown id="level" value={selectedLevel} options={levelOptions.map((option) => ({ label: option.props.children, value: option.props.value }))} onChange={handleLevelChange} placeholder="Select a level" />
-      <p id="hitpoints">Hit Points</p>
+      <br />
+      <h3 id="hitpoints">Hit Points</h3>
       <em>
         <p id="select1">{selectedLevel - 1 !== 0 ? `Select ${selectedLevel - 1}` : ''}</p>
       </em>

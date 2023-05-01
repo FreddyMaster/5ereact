@@ -124,7 +124,6 @@ input[type="modifier"]:focus {
 }
 
 
-
 #class-select,
 #alignment-select,
 #background-select,
@@ -139,9 +138,7 @@ input[type="modifier"]:focus {
   position: relative;
   color: #fff;
   border: none;
-  border-radius: 5px;
   text-align: left;
-  cursor: pointer;
   width: 20em;
 }
 
@@ -191,11 +188,13 @@ h3 {
 #race {
   display: flex;
   font-size: large;
+  margin-bottom: 0px;
 }
 
 #select1{
   display: flex;
-  margin-top: 0;
+  margin-top: 0.25em;
+  margin-bottom: 1em;
 }
 
 
@@ -210,4 +209,8 @@ h3 {
 #total-text{
   font-weight: bold;
   margin-left: .5em;
+}
+
+#ability-scores{
+  text-align: left;
 }

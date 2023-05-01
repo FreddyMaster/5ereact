@@ -20,8 +20,7 @@ export function RaceTab(props) {
           <label htmlFor="name" className="floatingName">Name</label>
         </span>
       </div>
-      <br />
-      <label id="race">Race</label>
+      <h3 id="race">Race</h3>
       <em id="select1">Select 1</em>
       <Accordion>
         {races.map((race) => (
