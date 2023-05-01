@@ -183,6 +183,7 @@ h3 {
 
 #name {
   display: flex;
+  text-align: left;
 }
 
 #race {

@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
-import { InputText } from 'primereact/inputtext';
-import { Accordion, AccordionTab } from 'primereact/accordion';
+import { TextInput, Accordion } from '@mantine/core';
+import { IconPlus } from '@tabler/icons-react';
 import races from "../data/races.json"
+
 
 export function RaceTab(props) {
   const [selectedRace, setSelectedRace] = useState(null);
@@ -11,23 +12,29 @@ export function RaceTab(props) {
     setSelectedRace(selectedRace === race ? null : race);
   };
 
+  const items = races.map((race) => (
+    <Accordion.Item key={race.name} value={race.name} className="accordion-button">
+      <Accordion.Control>{race.name}</Accordion.Control>
+      <Accordion.Panel>
+        <p>
+          <em>
+            Size: {race.size}, speed: +{race.speed}, languages: {race.languages.join(", ")}
+          </em>
+        </p>
+      </Accordion.Panel>
+    </Accordion.Item>
+  ));
+
   return (
     <div id="Race" className="tabcontent">
       <h1>Race</h1>
       <div id="name">
-        <span className="p-float-label">
-          <InputText id="name" value={name} onChange={(e) => setName(e.target.value)} />
-          <label htmlFor="name" className="floatingName">Name</label>
-        </span>
+        <TextInput id="name" placeholder="Your Name" label="Name" value={name} onChange={(e) => setName(e.target.value)} withAsterisk />
       </div>
       <h3 id="race">Race</h3>
       <em id="select1">Select 1</em>
       <Accordion>
-        {races.map((race) => (
-          <AccordionTab key={race.id} header={race.name} className="accordion-button">
-            <p><em>speed: +{race.speed}, {Object.entries(race.abilityBonuses).map(([key, value]) => `${key}: +${value}`).join(", ")}</em></p>
-          </AccordionTab>
-        ))}
+        {items}
       </Accordion>
     </div>
   );
