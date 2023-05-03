@@ -1,7 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Dropdown } from 'primereact/dropdown';
-import { DataTable } from 'primereact/datatable';
-import { Column } from 'primereact/column';
+import { Select, Table } from '@mantine/core';
 import classes from '../data/classes.json';
 
 export function ClassTab(props) {
@@ -12,11 +10,12 @@ export function ClassTab(props) {
 
 
   const handleClassChange = (event) => {
-    setSelectedClass(event.value);
+    const selectedObject = classes.find((item) => item.name === event);
+    setSelectedClass(selectedObject);
   };
 
   const handleLevelChange = (event) => {
-    setSelectedLevel(event.value);
+    setSelectedLevel(event);
   };
 
   const levelOptions = [];
@@ -27,28 +26,31 @@ export function ClassTab(props) {
       </option>
     );
   }
-
   const baseTemplate = (rowData, level) => {
     const hitdie = selectedClass.hit_die;
-    const options = Array.from({ length: hitdie }, (_, i) => i + 1);
+    const options = Array.from({ length: hitdie }, (_, i) => ({
+      value: i + 1,
+      label: i + 1,
+    }));
 
     if (level === 1) {
       return hitdie;
     } else {
       return (
-        <Dropdown
-          options={options}
+        <Select
+          data={options}
           value={rowData.Base}
-          onChange={(e) =>
+          onChange={(value) =>
             updateRowData(rowData, {
-              Base: e.value,
-              Total: Number(e.value) + Number(rowData.Con) + (Number(rowData.Level) - 2),
+              Base: value,
+              Total: Number(value) + Number(rowData.Con),
             })
           }
         />
       );
     }
   };
+
 
   const [data, setData] = useState(() => {
     const conModifier = parseInt(abilityScores[2].modifier.replace(/[^0-9]/g, ''), 10);
@@ -61,19 +63,24 @@ export function ClassTab(props) {
     return initialData;
   });
 
-  const updateRowData = (rowData, newData) => {
+  const updateRowData = (rowData, updatedValues) => {
     setData(prevData => {
       const index = prevData.findIndex(row => row.Level === rowData.Level);
       if (index !== -1) {
-        const newData = prevData[index];
+        const updatedRowData = {
+          ...rowData,
+          ...updatedValues,
+        };
         return [
           ...prevData.slice(0, index),
-          { ...newData, ...rowData },
+          updatedRowData,
           ...prevData.slice(index + 1)
         ];
       }
+      return prevData;
     });
   };
+
 
   useEffect(() => {
     if (data.length < levelArray.length) {
@@ -123,8 +130,22 @@ export function ClassTab(props) {
       <h3 htmlFor="class">Class/Level</h3>
       <em>Select at least 1</em>
       {/* Class tab content */}
-      <Dropdown id="class-select" options={classes} optionLabel="name" value={selectedClass} onChange={handleClassChange} placeholder="Select a class" />
-      <Dropdown id="level" value={selectedLevel} options={levelOptions.map((option) => ({ label: option.props.children, value: option.props.value }))} onChange={handleLevelChange} placeholder="Select a level" />
+      <Select
+        id="class-select"
+        data={classes.map((item) => item.name)}
+        value={selectedClass.name}
+        onChange={handleClassChange}
+        placeholder="Select a class"
+        textField="name"
+      />
+      <Select
+        id="level"
+        value={selectedLevel}
+        data={levelOptions.map((option) => ({ label: option.props.children, value: option.props.value }))}
+        onChange={handleLevelChange}
+        placeholder="Select a level"
+        textField="label"
+      />
       <br />
       <h3 id="hitpoints">Hit Points</h3>
       <em>
@@ -132,12 +153,26 @@ export function ClassTab(props) {
       </em>
       <p id="class-selected">{selectedClass?.name} {selectedClass.hit_die !== 0 ? `(d${selectedClass.hit_die})` : ''}</p>
       <p id="total-text">Total:</p>
-      <DataTable value={data} stripedRows tableStyle={{ minWidth: '50rem' }}>
-        <Column field="Level" header="Level" />
-        <Column field="Base" header="Base" body={(rowData) => baseTemplate(rowData, rowData.Level)} />
-        <Column field="Con" header="Con" />
-        <Column field="Total" header="Total" />
-      </DataTable>
+      <Table striped>
+        <thead>
+          <tr>
+            <th>Level</th>
+            <th>Base</th>
+            <th>Con</th>
+            <th>Total</th>
+          </tr>
+        </thead>
+        <tbody>
+          {data.map((rowData) => (
+            <tr key={rowData.Level}>
+              <td>{rowData.Level}</td>
+              <td>{baseTemplate(rowData, rowData.Level)}</td>
+              <td>{rowData.Con}</td>
+              <td>{rowData.Total}</td>
+            </tr>
+          ))}
+        </tbody>
+      </Table>
     </div>
   )
 }

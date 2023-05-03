@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import backgrounds from '../data/backgrounds.json';
 import alignments from '../data/alignments.json';
-import { Dropdown } from 'primereact/dropdown';
+import { Select } from '@mantine/core';
 
-export function BackgroundTab (props)  {
+export function BackgroundTab(props) {
   const [selectedAlignment, setSelectedAlignment] = useState(alignments[0].name);
   const [selectedBackground, setSelectedBackground] = useState(backgrounds[0].name);
 
@@ -22,11 +22,25 @@ export function BackgroundTab (props)  {
       <h3>Alignment</h3>
       <em>Select 1</em>
       {/* Alignment dropdown */}
-      <Dropdown id="alignment-select" options={alignments} optionLabel="name" value={selectedAlignment} onChange={handleAlignmentChange} placeholder="Select an alignment" />
+      <Select
+        id="alignment-select"
+        data={alignments.map((alignment) => alignment.name)}
+        label="Alignment"
+        placeholder="Select an alignment"
+        value={selectedAlignment}
+        onChange={(alignmentValue) => handleAlignmentChange(alignmentValue)}
+      />      
       <h3>Background</h3>
       <em>Select 1</em>
       {/* Background dropdown */}
-      <Dropdown id="background-select" options={backgrounds} optionLabel="name" value={selectedBackground} onChange={handleBackgroundChange} placeholder="Select a background" />
+      <Select
+        id="background-select"
+        data={backgrounds.map((background) => background.name)}
+        label="Background"
+        placeholder="Select a background"
+        value={selectedBackground}
+        onChange={(backgroundValue) => handleAlignmentChange(backgroundValue)}
+      />  
     </div>
   );
 };
