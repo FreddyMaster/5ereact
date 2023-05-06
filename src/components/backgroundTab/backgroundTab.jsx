@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import backgrounds from '../data/backgrounds.json';
 import alignments from '../data/alignments.json';
 import { Select } from '@mantine/core';
+import selectStyle from './styles';
 
 export function BackgroundTab(props) {
   const [selectedAlignment, setSelectedAlignment] = useState(alignments[0].name);
@@ -29,6 +30,8 @@ export function BackgroundTab(props) {
         placeholder="Select an alignment"
         value={selectedAlignment}
         onChange={(alignmentValue) => handleAlignmentChange(alignmentValue)}
+        style={selectStyle}
+
       />      
       <h3>Background</h3>
       <em>Select 1</em>
@@ -40,6 +43,7 @@ export function BackgroundTab(props) {
         placeholder="Select a background"
         value={selectedBackground}
         onChange={(backgroundValue) => handleAlignmentChange(backgroundValue)}
+        style={selectStyle}
       />  
     </div>
   );

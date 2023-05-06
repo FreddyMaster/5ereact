@@ -75,6 +75,7 @@ body {
   ;
 }
 
+
 .tab button.active {
   background-color: #2f3b47;
   color: #3ca9cd;
@@ -100,7 +101,6 @@ p {
   text-align: left;
 }
 
-
 label:not(.floatingName) {
   width: 100px;
   font-weight: bold;
@@ -123,36 +123,12 @@ input[type="modifier"]:focus {
   outline: none;
 }
 
-
-#class-select,
-#alignment-select,
-#background-select,
-#level {
-  display: flex;
-  margin: 10px;
-  width: 14em;
-  text-align: left;
-}
-
-.accordion-button {
-  position: relative;
-  color: #fff;
-  border: none;
-  text-align: left;
-  width: 20em;
-}
-
-.accordion-button:last-child {
-  margin-bottom: 1em
-}
-
 #Ability label {
   text-align: left;
   display: inline-block;
   width: 120px;
   text-align: start;
 }
-
 
 input[type="modifier"] {
   display: inline-block;
@@ -198,7 +174,6 @@ h3 {
   margin-bottom: 1em;
 }
 
-
 #hitpoints,
 #class-selected {
   text-align: left;
@@ -214,4 +189,5 @@ h3 {
 
 #ability-scores{
   text-align: left;
+  width: 8em;
 }

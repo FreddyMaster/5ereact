@@ -1,14 +1,14 @@
 import React, { useState, useEffect } from 'react';
 import { Select, Table } from '@mantine/core';
 import classes from '../data/classes.json';
+import selectStyle from './styles';
 
 export function ClassTab(props) {
   const [selectedClass, setSelectedClass] = useState({ name: '', hit_die: 0, primary_ability: '', saving_throws: [], armor_proficiencies: [], weapon_proficiencies: [], tool_proficiencies: [], spellcasting_ability: '', subclasses: [] });
   const [selectedLevel, setSelectedLevel] = useState(1);
   const levelArray = Array.from({ length: selectedLevel }, (_, i) => i + 1);
   const abilityScores = props.abilityScores;
-
-
+  
   const handleClassChange = (event) => {
     const selectedObject = classes.find((item) => item.name === event);
     setSelectedClass(selectedObject);
@@ -123,6 +123,9 @@ export function ClassTab(props) {
 
     setInitialData();
   }, [selectedClass, selectedLevel, abilityScores]);
+  
+  const total = data.reduce((acc, rowData) => acc + rowData.Total, 0);
+
 
   return (
     <div id="Class" className="tabcontent">
@@ -137,7 +140,9 @@ export function ClassTab(props) {
         onChange={handleClassChange}
         placeholder="Select a class"
         textField="name"
+        style={selectStyle}
       />
+      <h3 htmlFor="level">Level</h3>
       <Select
         id="level"
         value={selectedLevel}
@@ -145,6 +150,7 @@ export function ClassTab(props) {
         onChange={handleLevelChange}
         placeholder="Select a level"
         textField="label"
+        style={selectStyle}
       />
       <br />
       <h3 id="hitpoints">Hit Points</h3>
@@ -152,7 +158,7 @@ export function ClassTab(props) {
         <p id="select1">{selectedLevel - 1 !== 0 ? `Select ${selectedLevel - 1}` : ''}</p>
       </em>
       <p id="class-selected">{selectedClass?.name} {selectedClass.hit_die !== 0 ? `(d${selectedClass.hit_die})` : ''}</p>
-      <p id="total-text">Total:</p>
+      <p id="total-text">Total: {total}</p>
       <Table striped>
         <thead>
           <tr>
@@ -166,7 +172,7 @@ export function ClassTab(props) {
           {data.map((rowData) => (
             <tr key={rowData.Level}>
               <td>{rowData.Level}</td>
-              <td>{baseTemplate(rowData, rowData.Level)}</td>
+              <td style={selectStyle} >{baseTemplate(rowData, rowData.Level)}</td>
               <td>{rowData.Con}</td>
               <td>{rowData.Total}</td>
             </tr>
