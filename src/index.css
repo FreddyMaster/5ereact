@@ -112,7 +112,6 @@ input[type="modifier"] {
   font-weight: bold;
   font-size: 1em;
   padding: 5px;
-  margin-bottom: 10px;
   border: none;
   background-color: transparent;
 }
@@ -124,19 +123,13 @@ input[type="modifier"]:focus {
 }
 
 #Ability label {
-  text-align: left;
-  display: inline-block;
   width: 120px;
-  text-align: start;
 }
 
 input[type="modifier"] {
-  display: inline-block;
   width: 40px;
   text-align: center;
-  vertical-align: top;
 }
-
 
 label[for="class"],
 em {
@@ -188,6 +181,5 @@ h3 {
 }
 
 #ability-scores{
-  text-align: left;
-  width: 8em;
+  width: 20em;
 }

@@ -1,14 +1,14 @@
 import React, { useState, useEffect } from 'react';
 import { Select, Table } from '@mantine/core';
 import classes from '../data/classes.json';
-import selectStyle from './styles';
+import { selectStyle, thStyle } from './styles';
 
 export function ClassTab(props) {
   const [selectedClass, setSelectedClass] = useState({ name: '', hit_die: 0, primary_ability: '', saving_throws: [], armor_proficiencies: [], weapon_proficiencies: [], tool_proficiencies: [], spellcasting_ability: '', subclasses: [] });
   const [selectedLevel, setSelectedLevel] = useState(1);
   const levelArray = Array.from({ length: selectedLevel }, (_, i) => i + 1);
   const abilityScores = props.abilityScores;
-  
+
   const handleClassChange = (event) => {
     const selectedObject = classes.find((item) => item.name === event);
     setSelectedClass(selectedObject);
@@ -112,18 +112,26 @@ export function ClassTab(props) {
     const conModifier = parseInt(abilityScores[2].modifier.replace(/[^0-9]/g, ''), 10);
 
     function setInitialData() {
-      const initialData = Array.from({ length: selectedLevel }, (_, i) => ({
-        Level: i + 1,
-        Base: i === 0 ? selectedClass.hit_die : 1,
-        Con: conModifier,
-        Total: i === 0 ? selectedClass.hit_die + conModifier : 1 + conModifier
-      }));
-      setData(initialData);
+      setData(prevData => {
+        return prevData.map((rowData, index) => {
+          if (index + 1 <= selectedLevel) {
+            const base = index === 0 ? selectedClass.hit_die : rowData.Base;
+            const total = index === 0 ? base + conModifier : base + rowData.Con;
+            return {
+              ...rowData,
+              Base: base,
+              Total: total,
+            };
+          }
+          return rowData;
+        });
+      });
     }
 
     setInitialData();
   }, [selectedClass, selectedLevel, abilityScores]);
-  
+
+
   const total = data.reduce((acc, rowData) => acc + rowData.Total, 0);
 
 
@@ -159,13 +167,13 @@ export function ClassTab(props) {
       </em>
       <p id="class-selected">{selectedClass?.name} {selectedClass.hit_die !== 0 ? `(d${selectedClass.hit_die})` : ''}</p>
       <p id="total-text">Total: {total}</p>
-      <Table striped>
+      <Table striped withBorder withColumnBorders >
         <thead>
           <tr>
-            <th>Level</th>
-            <th>Base</th>
-            <th>Con</th>
-            <th>Total</th>
+            <th style={thStyle}>Level</th>
+            <th style={thStyle}>Base</th>
+            <th style={thStyle}>Con</th>
+            <th style={thStyle}>Total</th>
           </tr>
         </thead>
         <tbody>

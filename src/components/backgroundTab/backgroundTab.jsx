@@ -5,15 +5,15 @@ import { Select } from '@mantine/core';
 import selectStyle from './styles';
 
 export function BackgroundTab(props) {
-  const [selectedAlignment, setSelectedAlignment] = useState(alignments[0].name);
-  const [selectedBackground, setSelectedBackground] = useState(backgrounds[0].name);
+  const [selectedAlignment, setSelectedAlignment] = useState(null);
+  const [selectedBackground, setSelectedBackground] = useState(null);
 
   const handleBackgroundChange = (event) => {
-    setSelectedBackground(event.value);
+    setSelectedBackground(event);
   };
 
   const handleAlignmentChange = (event) => {
-    setSelectedAlignment(event.value);
+    setSelectedAlignment(event);
   };
 
   return (
@@ -32,7 +32,7 @@ export function BackgroundTab(props) {
         onChange={(alignmentValue) => handleAlignmentChange(alignmentValue)}
         style={selectStyle}
 
-      />      
+      />
       <h3>Background</h3>
       <em>Select 1</em>
       {/* Background dropdown */}
@@ -42,9 +42,9 @@ export function BackgroundTab(props) {
         label="Background"
         placeholder="Select a background"
         value={selectedBackground}
-        onChange={(backgroundValue) => handleAlignmentChange(backgroundValue)}
+        onChange={(backgroundValue) => handleBackgroundChange(backgroundValue)}
         style={selectStyle}
-      />  
+      />
     </div>
   );
 };
