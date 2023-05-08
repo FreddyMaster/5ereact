@@ -1,5 +1,5 @@
 const selectStyle = {
-    margin: '10px',
+    margin: '5px',
     width: '14em',
     textAlign: 'left'
   };

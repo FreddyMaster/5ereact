@@ -2,12 +2,12 @@ import { createStyles, rem } from '@mantine/core';
 
 export const useStyles = createStyles((theme) => ({
     root: {
-      backgroundColor: theme.colorScheme === 'dark' ? theme.colors.dark[6] : theme.colors.gray[0],
+      backgroundColor: theme.colorScheme === 'dark' ? theme.colors.dark[7] : theme.colors.gray[0],
       borderRadius: theme.radius.sm,
     },
   
     item: {
-      backgroundColor: theme.colorScheme === 'dark' ? theme.colors.dark[6] : theme.colors.gray[0],
+      backgroundColor: theme.colorScheme === 'dark' ? theme.colors.dark[7] : theme.colors.gray[0],
       border: `${rem(1)} solid transparent`,
       position: 'relative',
       zIndex: 0,
