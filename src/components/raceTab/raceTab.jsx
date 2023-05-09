@@ -1,14 +1,19 @@
+// Import necessary dependencies
 import React, { useState } from 'react';
 import { TextInput, Button, Tooltip } from '@mantine/core';
 import races from "../data/races.json"
 import { useStyles } from "./styles"
 
+// Define RaceTab component
 export function RaceTab(props) {
+  // Import and apply styles to component
   const { classes } = useStyles();
+  // Set initial state for selected race, name, and race description
   const [selectedRace, setSelectedRace] = useState(null);
   const [name, setName] = useState('');
   const [description, setDescription] = useState(null);
 
+  // Map through races array and create Button component with Tooltip component on hover
   const items = races.map((race) => (
     <Tooltip
       transitionProps={{ transition: 'fade', duration: 300 }}
@@ -20,9 +25,7 @@ export function RaceTab(props) {
       withArrow
     >
       <Button
-        variant="outline"
-        color="gray"
-        className={selectedRace === race.name ? classes.itemSelected : classes.item}
+        className={classes.item}
         onClick={() => setSelectedRace(race.name)}
         onMouseEnter={() => setDescription(`Size: ${race.size}, speed: +${race.speed}, languages: ${race.languages.join(", ")}`)}
         onMouseLeave={() => setDescription(null)}
@@ -32,8 +35,7 @@ export function RaceTab(props) {
     </Tooltip>
   ));
 
-
-
+  // Return JSX markup for RaceTab component
   return (
     <div id="Race" className="tabcontent">
       <h1>Race</h1>
@@ -42,8 +44,10 @@ export function RaceTab(props) {
       </div>
       <h3 id="race">Race</h3>
       <em id="select1">Select 1</em>
-      {items}
-      <p>{selectedRace}</p>
+      <div className={classes.container}>
+        {items} {/* Render race buttons */}
+      </div>
+      <p>{selectedRace}</p> {/* Display selected race */}
     </div>
   );
 }
