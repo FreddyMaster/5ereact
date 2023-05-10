@@ -7,19 +7,25 @@ export function ClassTab(props) {
   // Set up state variables
   const [selectedClass, setSelectedClass] = useState({ name: '', hit_die: 0, primary_ability: '', saving_throws: [], armor_proficiencies: [], weapon_proficiencies: [], tool_proficiencies: [], spellcasting_ability: '', subclasses: [] });
   const [selectedLevel, setSelectedLevel] = useState(1);
+  const [selectedSubclass, setSelectedSubclass] = useState(null);
   const levelArray = Array.from({ length: selectedLevel }, (_, i) => i + 1);
   const abilityScores = props.abilityScores;
 
+
   // Handle class change
   const handleClassChange = (event) => {
-    const selectedObject = classes.find((item) => item.name === event);
-    setSelectedClass(selectedObject);
+    setSelectedClass(classes.find((item) => item.name === event));
   };
 
   // Handle level change
   const handleLevelChange = (event) => {
     setSelectedLevel(event);
   };
+
+  const handleSubclassChange = (value) => {
+    setSelectedSubclass(value);
+  };
+
 
   // Create level options
   const levelOptions = [];
@@ -187,6 +193,17 @@ export function ClassTab(props) {
         textField="name"
         style={selectStyle}
       />
+      <Select
+        id="subclass-select"
+        data={selectedClass.subclasses.map((item) => item.name)}
+        value={selectedSubclass}
+        onChange={handleSubclassChange}
+        placeholder="Select a subclass"
+        textField="name"
+        style={selectStyle}
+      />
+
+
       {/* Render select component for level selection */}
       <h3 htmlFor="level">Level</h3>
       <Select
