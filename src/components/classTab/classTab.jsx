@@ -5,7 +5,7 @@ import { selectStyle, thStyle } from './styles';
 
 export function ClassTab(props) {
   // Set up state variables
-  const [selectedClass, setSelectedClass] = useState({ name: '', hit_die: 0, primary_ability: '', saving_throws: [], armor_proficiencies: [], weapon_proficiencies: [], tool_proficiencies: [], spellcasting_ability: '', subclasses: [] });
+  const [selectedClass, setSelectedClass] = useState({ name: '', hit_die: 0, primary_ability: '', saving_throws: [], armor_proficiencies: [], weapon_proficiencies: [], tool_proficiencies: [], spellcasting_ability: '', subclasses: [], subclass_level: 0 });
   const [selectedLevel, setSelectedLevel] = useState(1);
   const [selectedSubclass, setSelectedSubclass] = useState(null);
   const levelArray = Array.from({ length: selectedLevel }, (_, i) => i + 1);
@@ -173,6 +173,13 @@ export function ClassTab(props) {
     setInitialData();
   }, [selectedClass, selectedLevel, abilityScores]);
 
+
+  // Reset Selected Subclass on class change
+  useEffect(() => {
+    setSelectedSubclass(null);
+  }, [selectedClass]);
+
+
   // Calculate the total value by reducing the Total attribute of each row in the data array.
   const total = data.reduce((acc, rowData) => acc + rowData.Total, 0);
 
@@ -193,16 +200,17 @@ export function ClassTab(props) {
         textField="name"
         style={selectStyle}
       />
-      <Select
-        id="subclass-select"
-        data={selectedClass.subclasses.map((item) => item.name)}
-        value={selectedSubclass}
-        onChange={handleSubclassChange}
-        placeholder="Select a subclass"
-        textField="name"
-        style={selectStyle}
-      />
-
+      {selectedClass.name && selectedLevel >= selectedClass.subclass_level && (
+        <Select
+          id="subclass-select"
+          data={selectedClass.subclasses.map((item) => item.name)}
+          value={selectedSubclass}
+          onChange={handleSubclassChange}
+          placeholder="Select a subclass"
+          textField="name"
+          style={selectStyle}
+        />
+      )}
 
       {/* Render select component for level selection */}
       <h3 htmlFor="level">Level</h3>
