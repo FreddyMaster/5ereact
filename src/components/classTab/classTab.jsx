@@ -26,7 +26,6 @@ export function ClassTab(props) {
     setSelectedSubclass(value);
   };
 
-
   // Create level options
   const levelOptions = [];
   for (let i = 1; i <= 20; i++) {
@@ -188,7 +187,7 @@ export function ClassTab(props) {
   return (
     <div id="Class" className="tabcontent">
       <h1>Class/Level</h1>
-      <h3 htmlFor="class">Class/Level</h3>
+      <h3 htmlFor="class">Select a Class</h3>
       <em>Select at least 1</em>
       {/* Render select component for class selection */}
       <Select
@@ -213,7 +212,7 @@ export function ClassTab(props) {
       )}
 
       {/* Render select component for level selection */}
-      <h3 htmlFor="level">Level</h3>
+      <h3 htmlFor="level">Select Your Character's Level</h3>
       <Select
         id="level"
         value={selectedLevel}
@@ -234,7 +233,7 @@ export function ClassTab(props) {
       {/* Render total hit points */}
       <p id="total-text">Total: {total}</p>
       {/* Render hit points table */}
-      <Table striped withBorder withColumnBorders >
+      <Table striped>
         <thead>
           <tr>
             <th style={thStyle}>Level</th>
@@ -244,18 +243,23 @@ export function ClassTab(props) {
           </tr>
         </thead>
         <tbody>
-          {/* Map over data to render table rows */}
           {data.map((rowData) => (
             <tr key={rowData.Level}>
-              <td>{rowData.Level}</td>
-              {/* Render baseTemplate function in a cell */}
-              <td style={selectStyle} >{baseTemplate(rowData, rowData.Level)}</td>
-              <td>{rowData.Con}</td>
-              <td>{rowData.Total}</td>
+              <td>{rowData.Level}</td> {/*Gets Level*/}
+              <td style={selectStyle}>{baseTemplate(rowData, rowData.Level)}</td> {/*Calculate Base Health Per Level*/}
+              <td>+{rowData.Con}</td> {/*Gets Consitution Modifier Per Level*/}
+              <td>{rowData.Total}</td> {/*Calculate Total Health Per Level*/}
             </tr>
           ))}
+          <tr>
+            <td>Total</td>
+            <td>{data.reduce((acc, rowData) => acc + rowData.Base, 0)}</td> {/*Calculate Base Health Total*/}
+            <td>+{data.reduce((acc, rowData) => acc + rowData.Con, 0)}</td> {/*Calculate Consitution Modifier Total*/}
+            <td>{total}</td> {/*Calculate Total Health*/}
+          </tr>
         </tbody>
       </Table>
+
     </div>
   );
 }

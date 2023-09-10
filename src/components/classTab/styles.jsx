@@ -1,7 +1,6 @@
 export const selectStyle = {
-    margin: '10px',
-    width: '14em',
-    textAlign: 'left'
+    width: '10em',
+    textAlign: 'center'
   };
 
 export const thStyle = {

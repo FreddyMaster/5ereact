@@ -15,6 +15,12 @@ export const useStyles = createStyles((theme) => ({
     width: '150px',
     boxSizing: 'border-box',
   },
+
+  selectedRace: {
+    fontWeight: 'bold',
+    border: `${rem(2)} solid #3ca9cd`, // Add an outline
+    padding: '4px', // Add some padding for spacing
+  },
 }));
 
 export default useStyles;

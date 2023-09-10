@@ -25,7 +25,7 @@ export function RaceTab(props) {
       withArrow
     >
       <Button
-        className={classes.item}
+        className={`${classes.item} ${selectedRace === race.name ? classes.selectedRace : ''}`}
         onClick={() => setSelectedRace(race.name)}
         onMouseEnter={() => setDescription(`Size: ${race.size}, speed: +${race.speed}, languages: ${race.languages.join(", ")}`)}
         onMouseLeave={() => setDescription(null)}
@@ -47,7 +47,6 @@ export function RaceTab(props) {
       <div className={classes.container}>
         {items} {/* Render race buttons */}
       </div>
-      <p>{selectedRace}</p> {/* Display selected race */}
     </div>
   );
 }
