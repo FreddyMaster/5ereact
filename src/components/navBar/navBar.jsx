@@ -20,13 +20,19 @@ export function NavBar({ activeTab, event, openTab }) {
           className={`tablinks ${activeTab === "Ability" ? "active" : ""}`}
           onClick={(event) => openTab(event, "Ability")}
         >
-          Ability Scores / Feats
+          Ability Scores
         </button>
         <button
           className={`tablinks ${activeTab === "Background" ? "active" : ""}`}
           onClick={(event) => openTab(event, "Background")}
         >
           Background
+        </button>
+        <button
+          className={`tablinks ${activeTab === "Feat" ? "active" : ""}`}
+          onClick={(event) => openTab(event, "Feat")}
+        >
+          Feats
         </button>
       </div>
     </div>

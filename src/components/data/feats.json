@@ -1,0 +1,24 @@
+[
+    {
+      "name": "Alert",
+      "description": "You gain a +5 bonus to initiative.",
+      "prerequisite": "",
+      "benefit": "You can't be surprised while you are conscious. Other creatures don't gain advantage on attack rolls against you as a result of being hidden from you.",
+      "source": "Player's Handbook"
+    },
+    {
+      "name": "Great Weapon Master",
+      "description": "You've learned to put the weight of a weapon to your advantage, letting its momentum empower your strikes.",
+      "prerequisite": "Strength 13 or higher",
+      "benefit": "On your turn, when you score a critical hit with a melee weapon or reduce a creature to 0 hit points with one, you can make one melee weapon attack as a bonus action.",
+      "source": "Player's Handbook"
+    },
+    {
+      "name": "Lucky",
+      "description": "You have inexplicable luck that seems to kick in at just the right moment.",
+      "prerequisite": "",
+      "benefit": "You have 3 luck points. Whenever you make an attack roll, an ability check, or a saving throw, you can spend one luck point to roll an additional d20. You can choose to spend one of your luck points after you roll the die, but before the outcome is determined. You choose which of the d20s is used for the attack roll, ability check, or saving throw.",
+      "source": "Player's Handbook"
+    }
+  ]
+  

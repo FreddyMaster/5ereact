@@ -6,6 +6,7 @@ import { RaceTab } from './components/raceTab/raceTab'; // Import the RaceTab co
 import { ClassTab } from './components/classTab/classTab'; // Import the ClassTab component from the classTab directory
 import { BackgroundTab } from './components/backgroundTab/backgroundTab'; // Import the BackgroundTab component from the backgroundTab directory
 import { AbilityTab } from './components/abilityTab/abilityTab'; // Import the AbilityTab component from the abilityTab directory
+import { FeatTab } from './components/featTab/featTab'; // Import the FeatTab component from the abilityTab directory
 
 function App() {
   // Define state variables for the active tab and ability scores
@@ -52,7 +53,7 @@ function App() {
       <ClassTab abilityScores={abilityScores} />
       <AbilityTab abilityScores={abilityScores} setAbilityScores={setAbilityScores} />
       <BackgroundTab />
-
+      <FeatTab />
     </div>
   );
 }

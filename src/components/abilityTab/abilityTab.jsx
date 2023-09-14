@@ -83,7 +83,6 @@ export function AbilityTab(props) {
           <input type="modifier" id="charisma-modifier" name="charisma-modifier" value={abilityScores[5].modifier} readOnly />
         </div>
       </div>
-      <h3>Feats</h3>
     </div>
   );
 }
